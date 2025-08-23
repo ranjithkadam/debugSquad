@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML Demo Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Demo</title>
+
+    <!-- Linking External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to HTML Learning</h1>
+        <p class="tagline">Understanding the basics of HTML, Tags, Attributes & Elements</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li><a href="#about">About HTML</a></li>
+            <li><a href="#tags">Tags</a></li>
+            <li><a href="#attributes">Attributes</a></li>
+            <li><a href="#elements">Elements</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- About HTML -->
+        <section id="about">
+            <h2>📖 What is HTML?</h2>
+            <p>HTML stands for <b>HyperText Markup Language</b>. It is the backbone of the web, used to structure and present content.</p>
+            <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" alt="HTML Logo" width="120">
+        </section>
+
+        <!-- Tags Section -->
+        <section id="tags">
+            <h2>🔖 Tags in HTML</h2>
+            <p>Tags define the structure of a webpage. Example:</p>
+            <pre>
+&lt;h1&gt;Heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph&lt;/p&gt;
+            </pre>
+            <p><b>Types of Tags:</b></p>
+            <ul>
+                <li>Single: <code>&lt;img&gt;, &lt;br&gt;</code></li>
+                <li>Paired: <code>&lt;h1&gt;Heading&lt;/h1&gt;</code></li>
+            </ul>
+        </section>
+
+        <!-- Attributes Section -->
+        <section id="attributes">
+            <h2>⚙️ Attributes in HTML</h2>
+            <p>Attributes provide additional information about tags.</p>
+            <p><b>Examples:</b></p>
+            <ul>
+                <li><code>&lt;img src="image.jpg" alt="Description"&gt;</code></li>
+                <li><code>&lt;a href="https://example.com" target="_blank"&gt;Visit Site&lt;/a&gt;</code></li>
+                <li><code>&lt;p class="highlight"&gt;Styled Paragraph&lt;/p&gt;</code></li>
+            </ul>
+        </section>
+
+        <!-- Elements Section -->
+        <section id="elements">
+            <h2>🧱 HTML Elements</h2>
+            <p>Elements are the building blocks of a webpage.</p>
+
+            <h3>Block Elements:</h3>
+            <div class="block-demo">This is a DIV (Block Element)</div>
+            <p>This is a paragraph (Block Element)</p>
+
+            <h3>Inline Elements:</h3>
+            <p>This is <span class="highlight">SPAN (Inline Element)</span> inside a paragraph.</p>
+
+            <h3>Inline-Block Elements:</h3>
+            <div class="inline-block-demo">Box 1</div>
+            <div class="inline-block-demo">Box 2</div>
+            <div class="inline-block-demo">Box 3</div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 HTML Learning Demo | Created by Vamsi</p>
+    </footer>
+
+</body>
+</html>
