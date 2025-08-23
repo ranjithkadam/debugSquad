@@ -1,0 +1,86 @@
+<!--
+Sure! Here's a **simple and easy-to-understand explanation** of **HTML**, including:
+
+1. **Definition**
+2. **History**
+3. **Versions**
+4. **Sample Code**
+
+---
+
+🟢 1. What is HTML? (Definition)
+
+**HTML** stands for **HyperText Markup Language**.
+
+It is the **standard language** used to **create web pages**.
+HTML tells a web browser **how to display** text, images, videos, and other content on a webpage.
+
+* **"HyperText"** means links between pages.
+* **"Markup Language"** means it uses **tags** to format content.
+
+✅ **Example Tags:** `<html>`, `<head>`, `<body>`, `<h1>`, `<p>`, `<a>`, `<img>`, etc.
+
+---
+
+🟡 2. History of HTML
+
+| Year | Version       | Description                                                         |
+| ---- | ------------- | ------------------------------------------------------------------- |
+| 1991 | HTML 1.0      | First release by **Tim Berners-Lee**. Very basic structure.         |
+| 1995 | HTML 2.0      | First official standard. Added more tags and forms.                 |
+| 1997 | HTML 3.2      | More formatting options like tables and styles.                     |
+| 1999 | HTML 4.01     | Added support for CSS and scripting (like JavaScript).              |
+| 2008 | HTML5 (Draft) | Modern HTML with video, audio, mobile support, etc.                 |
+| 2014 | HTML5 (Final) | Final version of HTML5 approved by W3C (World Wide Web Consortium). |
+
+---
+
+🔵 3. HTML Versions (Summary Table)
+
+| Version   | Key Features                           |
+| --------- | -------------------------------------- |
+| HTML 1.0  | Basic page structure                   |
+| HTML 2.0  | Forms, basic tables                    |
+| HTML 3.2  | Style tags, tables, scripts            |
+| HTML 4.01 | CSS, better structure, scripting       |
+| HTML5     | Multimedia (video/audio), mobile-ready |
+
+---
+
+🟣 4. HTML Sample Code (Very Simple Web Page)
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is my first HTML page.</p>
+    <a href="https://www.google.com">Visit Google</a>
+</body>
+</html>
+```
+
+📝 **Explanation:**
+
+* `<!DOCTYPE html>`: Tells the browser this is an HTML5 document.
+* `<html>`: Starts the HTML document.
+* `<head>`: Contains the page title and other info.
+* `<title>`: Sets the name of the tab.
+* `<body>`: Content that shows on the page.
+* `<h1>`: Main heading.
+* `<p>`: Paragraph.
+* `<a>`: Link to another website.
+
+---
+
+✅ Summary (In Simple Words)
+
+* **HTML is the base of all web pages**.
+* It uses **tags** to tell browsers how to show content.
+* It has **grown from a simple structure (HTML 1.0)** to a powerful tool with **HTML5**.
+
+ 
+>
