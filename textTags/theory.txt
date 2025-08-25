@@ -1,0 +1,10 @@
+
+Text Summary:
+
+<h1> to <h6>----Headings
+<p>   ------    Paragraphs
+<pre>   ------- Preformatted text
+<ol>, <ul>, <li>	----------------    Ordered and unordered lists
+<dl>, <dt>, <dd>    ----------------  	Definition lists
+<hr>    --------------------	Horizontal line
+<i class="fa...">       -------------	Icons using Font Awesome
