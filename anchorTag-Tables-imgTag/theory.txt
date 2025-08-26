@@ -1,0 +1,99 @@
+ 
+ 🔗 1. `<a>` – Anchor Tag
+
+The `<a>` tag is used to **create hyperlinks**. It links one page to another, or to a specific part of the same page, or even to downloadable files or email addresses.
+
+**Basic Syntax: 
+
+ html
+<a href="https://www.example.com">Visit Example</a>
+ 
+
+**Common Attributes: 
+
+* `href`: The URL or link destination.
+* `target`: Defines where to open the link (`_blank` for new tab).
+* `title`: Tooltip text shown on hover.
+* `download`: Prompts the browser to download the file instead of navigating to it.
+
+**Example: 
+
+ html
+<a href="https://www.google.com" target="_blank" title="Go to Google">Google</a>
+```
+
+---
+
+ 🖼️ 2. `<img>` – Image Tag
+
+The `<img>` tag is used to **embed images** in an HTML page. It is a **self-closing tag**.
+
+**Basic Syntax: 
+
+ html
+<img src="image.jpg" alt="Description of image">
+ 
+
+**Common Attributes: 
+
+* `src`: Path to the image file.
+* `alt`: Text to display if the image fails to load (also used for accessibility).
+* `width` and `height`: Dimensions of the image.
+* `title`: Tooltip shown on hover.
+
+**Example: 
+
+ html
+<img src="logo.png" alt="Company Logo" width="200" height="100">
+ 
+
+---
+📊 3. `<table>` – Table Tag
+
+The `<table>` tag is used to **display data in a tabular format** (rows and columns).
+
+**Basic Structure:
+
+html
+<table>
+  <thead>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data 1</td>
+      <td>Data 2</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+**Key Elements:
+
+* `<table>`: The main table container.
+* `<tr>`: Table row.
+* `<th>`: Table header cell (bold and centered by default).
+* `<td>`: Table data cell.
+* `<thead>`, `<tbody>`, `<tfoot>`: Group rows semantically for better structure and styling.
+
+**Example:**
+
+```html
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Alice</td>
+    <td>24</td>
+  </tr>
+</table>
+```
+
+ 
+
+ 
