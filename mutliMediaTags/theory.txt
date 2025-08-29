@@ -1,0 +1,103 @@
+ 
+## 📢 **Audio Tag (`<audio>`)**
+
+### What is it?
+
+The `<audio>` tag is used to embed audio (sound) content like songs, background music, or voice notes on a web page.
+
+### Syntax:
+
+```html
+<audio controls>
+  <source src="audio-file.mp3" type="audio/mp3">
+</audio>
+```
+
+### Common Attributes:
+
+* `controls`: Shows play, pause, volume, etc.
+* `autoplay`: Audio starts playing automatically when the page loads.
+* `loop`: Repeats the audio automatically.
+* `muted`: Starts the audio in a muted state.
+
+### Example:
+
+```html
+<audio controls autoplay>
+  <source src="song.mp3" type="audio/mp3">
+</audio>
+```
+
+---
+
+## 🎥 **Video Tag (`<video>`)**
+
+### What is it?
+
+The `<video>` tag is used to embed video files into a webpage. It allows users to play videos directly in the browser without needing external players.
+
+### Syntax:
+
+```html
+<video controls width="300" height="200">
+  <source src="video-file.mp4" type="video/mp4">
+</video>
+```
+
+### Common Attributes:
+
+* `controls`: Shows video controls like play, pause, etc.
+* `autoplay`: Plays video automatically when page loads.
+* `width` & `height`: Sets the size of the video player.
+* `loop`: Repeats the video after it ends.
+* `muted`: Mutes the video.
+
+### Example:
+
+```html
+<video controls width="300" height="400">
+  <source src="video.mp4" type="video/mp4">
+</video>
+```
+
+---
+
+## 🌐 **iFrame Tag (`<iframe>`)**
+
+### What is it?
+
+The `<iframe>` tag is used to embed another webpage or content like YouTube videos, maps, or documents inside your current HTML page.
+
+### Syntax:
+
+```html
+<iframe src="https://example.com" width="500" height="300"></iframe>
+```
+
+### Common Attributes:
+
+* `src`: URL of the page or content to embed.
+* `width` & `height`: Sets the size of the iframe.
+* `allowfullscreen`: Allows fullscreen display.
+* `frameborder`: Controls the border of the iframe (set to `0` for no border).
+
+### Example (Embedding a YouTube Video):
+
+```html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoID"
+  frameborder="0" allowfullscreen></iframe>
+```
+
+---
+
+## Summary Table:
+
+| Tag        | Used For          | Media Type        | Important Attribute Examples                |
+| ---------- | ----------------- | ----------------- | ------------------------------------------- |
+| `<audio>`  | Playing sound     | Audio (e.g., MP3) | `controls`, `autoplay`, `loop`, `muted`     |
+| `<video>`  | Playing videos    | Video (e.g., MP4) | `controls`, `autoplay`, `width`, `loop`     |
+| `<iframe>` | Embedding content | Web pages, videos | `src`, `width`, `height`, `allowfullscreen` |
+
+---
+
+ 
