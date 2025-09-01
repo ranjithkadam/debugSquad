@@ -1,0 +1,70 @@
+Theory:
+
+This HTML code creates a form for user input using different types of input fields.
+
+The <form> tag defines the form structure.
+
+<label> is used to describe each input field.
+
+<input> creates different fields like text, email, password, date, etc.
+
+The type attribute in <input> defines what kind of data the field will accept.
+<button> is used to submit the form.
+
+Additions:
+
+Missing name attributes on inputs — required for submitting data.
+type="age" is invalid. There’s no such input type — use type="number" instead.
+Added required where it makes sense (for basic validation).
+Added method="post" in <form> for best practice (though optional).
+
+HTML Code:
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="#" method="post">
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="email">Email Id:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="phoneNo">Phone No:</label>
+        <input type="tel" id="phoneNo" name="phoneNo" minlength="10" maxlength="12" required><br><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date"><br><br>
+
+        <label for="week">Week:</label>
+        <input type="week" id="week" name="week"><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="0"><br><br>
+
+        <label for="dateofbirth">Date of Birth:</label>
+        <input type="date" id="dateofbirth" name="dateofbirth"><br><br>
+
+        <label for="url">URL:</label>
+        <input type="url" id="url" name="url"><br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+
+</html>
