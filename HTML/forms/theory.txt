@@ -68,3 +68,134 @@ HTML Code:
 </body>
 
 </html>
+
+ 
+
+ 📝 **HTML Form Tags Notes**
+
+✅ `<form>`
+
+* **Purpose**: It creates a form to collect user input.
+* **Example**:
+
+  ```html
+  <form> ... </form>
+  ```
+
+ 
+
+ ✅ `<label>`
+
+* **Purpose**: Describes what the input is for; improves accessibility.
+* **Tip**: Use `for="id"` to link it with an input.
+* **Example**:
+
+  ```html
+  <label for="search">Search</label>
+  ```
+
+---
+
+ ✅ `<input>`
+
+* **Purpose**: Creates various types of user input fields.
+* **Common `type` values**:
+
+  * `text` – single-line text input
+  * `search` – search box
+  * `radio` – for selecting one option from a group
+  * `checkbox` – for selecting multiple options
+  * `color` – color picker
+  * `range` – slider
+  * `file` – upload file
+  * `reset` – resets the form
+  * `submit` – submits the form
+* **Example**:
+
+  ```html
+  <input type="text" id="name">
+  ```
+
+---
+
+ ✅ `type="radio"`
+
+* **Purpose**: Allows selecting **only one option** from a group.
+* **Note**: Use the same `name` for all related radio buttons.
+* **Example**:
+
+  ```html
+  <input type="radio" name="gender" value="male">
+  ```
+
+---
+
+ ✅ `type="checkbox"`
+
+* **Purpose**: Allows selecting **multiple options**.
+* **Example**:
+
+  ```html
+  <input type="checkbox" name="skills" value="HTML">
+  ```
+
+---
+ ✅ `type="color"`
+
+* **Purpose**: Shows a color picker to choose a color.
+* **Example**:
+
+  ```html
+  <input type="color" name="color">
+  ```
+
+---
+
+ ✅ `type="range"`
+
+* **Purpose**: Creates a slider to select a value in a range.
+* **Attributes**:
+
+  * `min`, `max` – set the limits
+  * `step` – set the increment
+* **Example**:
+
+  ```html
+  <input type="range" min="1" max="10" step="1">
+  ```
+
+---
+
+ ✅ `type="file"`
+
+* **Purpose**: Lets the user upload a file.
+* **Example**:
+
+  ```html
+  <input type="file" name="resume">
+  ```
+
+---
+
+ ✅ `<button>`
+
+* **Purpose**: A clickable button.
+* **Use**: For submitting forms, or custom JavaScript actions.
+* **Example**:
+
+  ```html
+  <button type="submit">Submit</button>
+  ```
+
+---
+
+ ✅ `type="reset"`
+
+* **Purpose**: Clears all form fields and resets them to default.
+* **Example**:
+
+  ```html
+  <input type="reset" value="Reset">
+  ```
+
+---
