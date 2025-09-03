@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1</title>
+</head>
+
+<body>
+    <form action="#">
+    <fieldset>
+       <legend><h3>Candidate Details</h3></legend>
+        <label for="firstName">First Name &nbsp; &nbsp;<input type="text" id="firstName" placeholder="First Name"
+                maxlength="10"> &nbsp; &nbsp; (Max 10 Characters allowed)</label><br><br>
+
+        <label for="lastName">Last Name &nbsp; &nbsp;<input type="text" id="lasttName" placeholder="First Name"
+                maxlength="10"> &nbsp; &nbsp; (Max 10 Characters allowed)</label><br><br>
+
+        <label for="email">Email ID &nbsp; &nbsp;<input type="email" id="email"
+                placeholder="example@gmail.com"></label><br><br>
+
+        <label for="phone">Phone Number &nbsp; &nbsp;<input type="tel" id="phone" placeholder="Enter Phone Number">
+            &nbsp; &nbsp; (Max 10 Numbers allowed)</label><br><br>
+        <label>Gender &nbsp;
+            <label><input type="radio" name="gender" value="male">Male</label>
+            <label><input type="radio" name="gender" value="female">Female</label>
+        </label><br><br>
+
+        <label for="dob">Date Of Birth(DOB) &nbsp; &nbsp;
+            <input type="date" id="dob" max="2025-09-05">
+        </label><br><br>
+
+        <label for="address">Address &nbsp; &nbsp;<input type="text" id="address" placeholder=""></label><br><br>
+
+        <label for="city">City &nbsp; &nbsp;<input type="text maxlength=" 50"" id="city" placeholder="Ex: Hyderabad">
+            &nbsp; &nbsp; (Max
+            50 Characters Allowed)</label><br><br>
+
+        <label for="pincode">Pin Code: &nbsp; &nbsp;<input type="number" maxlength="6" id="pincode"
+                placeholder="Ex: 505100"> &nbsp;
+            &nbsp; (Max 6 Characters Allowed)</label><br><br>
+
+        <label for="state">State &nbsp; &nbsp;<input type="text" id="state" maxlength="50" placeholder="Ex: telangana">
+            &nbsp;
+            &nbsp; (Max 50 Characters Allowed)</label><br><br>
+
+        <label for="country">Country &nbsp; &nbsp;<input type="text" maxlength="50" id="country"
+                placeholder="Ex: India"> &nbsp;
+            &nbsp; (Max 50 Characters Allowed)</label><br><br>
+
+<hr>
+        <label>Hobbies: &nbsp; &nbsp;
+            <label><input type="checkbox" name="drawing" value="drawing">Drawing</label>
+            <label><input type="checkbox" name="singing" value="singing">Singing</label>
+            <label><input type="checkbox" name="dancing" value="dancing">Dancing</label>
+            <label><input type="checkbox" name="skeching" value="sketching">Sketching</label>
+            <label for="others"><input type="checkbox" name="others" value="others">Others
+            <input type="text" id="others" placeholder="Teaching" maxlength="50"> &nbsp; &nbsp;(Max 50 Characters
+                Allowed)</label> <br><br>
+
+<hr>
+        <label>Qualification: &nbsp; &nbsp;<br>
+            <label><input type="checkbox" name="Qualification" value="high school">High School (10th)</label> <br>
+            <label><input type="checkbox" name="Qualification" value="higher school">Higher School (12th)</label> <br>
+            <label><input type="checkbox" name="Qualification" value="Graduation">Graduation (Bachelors)</label> <br>
+            <label><input type="checkbox" name="Qualification" value="postGraduation">Post Graduation (Masters) (Bachelors)</label> <br>
+            <label><input type="checkbox" name="Qualification" value="phD">PhD</label> <br>
+        </label><br><br>
+
+<hr>
+        <label>Courses: &nbsp; &nbsp;<br>
+            <label><input type="radio" name="course" value="CSE">Computer Science Engineering</label> <br>
+            <label><input type="radio" name="course" value="AIML">Artificial Intelligence And Machine Learning</label> <br>
+            <label><input type="radio" name="course" value="AIDS">Artificial Intelligence And Data Science</label> <br>
+            <label><input type="radio" name=" course" value="it">Information Technology</label> <br>
+            <label><input type="radio" name="course" value="iot">Internet of Things</label> <br>
+        </label><br><br>
+         <input type="button" value="submit">
+         <input type="reset" value="Reset">
+    </fieldset>
+    </form>
+</body>
+
+</html>
