@@ -1,0 +1,22 @@
+
+    CSS Selectors : 
+
+    - Basic Selectors
+        - Tag Selector -    targets HTML elements by their name
+        - Class Selector -  targets elements with a specific class
+        - ID Selector -     targets a unique element with a specific ID
+
+    - Combinators
+        - Descendant Combinator -  targets elements that are descendants of a specified element
+        - Child Combinator -       targets elements that are direct children of a specified element
+        - Adjacent Sibling Combinator -  targets an element that is directly after a specified element
+        - General Sibling Combinator -  targets all siblings of a specified element that follow it
+
+    - Pseudo-Selectors
+        - Pseudo-Classes
+        - Pseudo-Elements
+    
+    - Special Selectors
+        - Attribute Selectors - targets elements based on their attributes and attribute values
+        - Universal Selector - selects all elements
+        - Grouping Selectors - groups multiple selectors to apply the same styles

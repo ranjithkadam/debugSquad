@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors Playground</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Universal Selector (*) -->
+  <header>
+    <h1 id="main-title">CSS Selectors Playground</h1>
+    <p class="tagline">Learn CSS selectors step by step</p>
+  </header>
+
+  <main>
+    <!-- Element/Tag Selector -->
+    <section>
+      <h2>Element Selector Example</h2>
+      <p>This is a simple paragraph to target with <code>p</code> selector.</p>
+    </section>
+
+    <!-- Class Selector -->
+    <section>
+      <h2>Class Selector Example</h2>
+      <p class="highlight">This text has a class <code>.highlight</code>.</p>
+      <p class="highlight special">This text has multiple classes.</p>
+    </section>
+
+    <!-- ID Selector -->
+    <section>
+      <h2>ID Selector Example</h2>
+      <p id="unique-text">This text has an ID <code>#unique-text</code>.</p>
+    </section>
+
+    <!-- Group Selector -->
+    <section>
+      <h2>Group Selector Example</h2>
+      <h3>Heading 3</h3>
+      <p>Paragraph with group selector.</p>
+    </section>
+
+    <!-- Descendant & Child Selectors -->
+    <section>
+      <h2>Descendant & Child Selector Example</h2>
+      <div class="parent">
+        <p>Direct child of parent (target with <code>.parent &gt; p</code>).</p>
+        <div>
+          <p>Nested paragraph (target with <code>.parent p</code>).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sibling Selectors -->
+    <section>
+      <h2>Sibling Selector Example</h2>
+      <h3>Heading before sibling</h3>
+      <p class="sibling">This paragraph is an adjacent sibling (<code>h3 + p</code>).</p>
+      <p class="sibling">This paragraph is a general sibling (<code>h3 ~ p</code>).</p>
+    </section>
+
+    <!-- Attribute Selectors -->
+    <section>
+      <h2>Attribute Selector Example</h2>
+      <a href="https://example.com" target="_blank">External Link</a><br>
+      <input type="text" placeholder="Type your name">
+      <input type="email" placeholder="Enter your email">
+    </section>
+
+    <!-- Pseudo-classes -->
+    <section>
+      <h2>Pseudo-Classes Example</h2>
+      <ul class="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+      </ul>
+
+      <button>Hover & Focus on me</button>
+    </section>
+
+    <!-- Pseudo-elements -->
+    <section>
+      <h2>Pseudo-Elements Example</h2>
+      <p class="intro">This paragraph will use <code>::first-letter</code> and <code>::first-line</code>.</p>
+      <p class="before-after">We can add content using <code>::before</code> and <code>::after</code>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CSS Playground</p>
+  </footer>
+
+   
+  </table>
+</body>
+</html>
