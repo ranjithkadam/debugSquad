@@ -1,0 +1,133 @@
+ What is CSS?
+CSS (Cascading Style Sheets) is a language used to describe the style and layout of web pages. It controls how HTML elements appear — including colors, fonts, spacing, and positioning.
+Think of HTML as the structure of a house, and CSS as the paint, furniture, and decorations that make it look beautiful.
+
+
+🎯 Uses of CSS
+CSS is used to:
+- Style text (fonts, colors, sizes)
+- Add spacing (margins, padding)
+- Create layouts (grids, flexbox)
+- Make websites responsive (adapt to different screen sizes)
+- Add animations and transitions
+- Improve user experience and visual appeal
+
+🧩 Types of CSS
+There are three main types of CSS:
+1. inline css:
+  CSS written directly inside an HTML tag using the "style" attribute.
+  syntax:
+  <p style=color:red>Hello World</p>
+
+2. internal css:
+  CSS written inside a <style> tag within the <head> section of HTML.
+  syntax:
+  <style>
+  p{
+    color:red;
+  }
+  </style>
+
+
+3. external CSS:
+  CSS written in a separate (.css) file and linked to the HTML document.
+  link rel="stylesheet" href="filePath"
+
+
+**CSS Syntax
+CSS syntax follows this basic pattern:
+selector {
+  property: value;
+}
+
+
+
+**Example:
+h1 {
+  color: red;
+  font-size: 24px;
+}
+- Selector: h1 targets all <h1> elements
+- Property: color, font-size define what to style
+- Value: red, 24px are the styles applied.
+
+***Linking External CSS
+To use an external CSS file in HTML:
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+In CSS (Cascading Style Sheets), the terms priority, preference, and specificity all relate to how the browser decides which CSS rules to apply when more than one rule targets the same element. Here's a breakdown of each term:
+
+🔹 1. Specificity
+
+Specificity is a system of weights applied to CSS selectors to determine which rule takes precedence when multiple rules apply to the same element.
+
+It is calculated based on the types of selectors used:
+
+Selector Type	Weight
+Inline styles (style="")	1000
+ID selectors (#id)	100
+Class, attribute, or pseudo-class selectors (.class, [type], :hover)	10
+Element and pseudo-elements (div, h1, ::before)	1
+
+Example:
+
+h1 { color: blue; }                 /* Specificity: 1 */
+.title { color: green; }           /* Specificity: 10 */
+#header { color: red; }            /* Specificity: 100 */
+
+
+An element like <h1 id="header" class="title"> will be red, because #header has the highest specificity.
+
+🔹 2. Priority (Importance)
+
+Priority refers to the importance of a rule. The most important rule is one marked with !important.
+
+p {
+  color: green !important;
+}
+
+p {
+  color: red;
+}
+
+
+The paragraph will be green, even though the second rule comes later, because !important gives it higher priority.
+
+💡 !important always overrides specificity — but if two conflicting !important rules apply, then specificity is used to break the tie.
+
+🔹 3. Preference (Source Order / Cascade)
+
+When specificity and !important do not determine a clear winner (i.e. selectors have equal specificity and no !important), preference is given based on source order — the rule that comes later in the CSS wins.
+
+p {
+  color: blue;
+}
+
+p {
+  color: orange;
+}
+
+
+The paragraph will be orange, because it’s the later rule with the same specificity.
+
+✅ Summary Table
+Rule Conflict Type	Winner Based On
+!important vs normal	!important wins
+Both use !important	Higher specificity wins
+Equal specificity & no !important	Later (lower in file) rule wins
+Higher specificity vs lower specificity	Higher specificity wins (if no !important)
+
+
+
+
+
+
+ 
+
+  
+  
