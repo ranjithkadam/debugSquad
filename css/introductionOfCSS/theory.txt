@@ -121,13 +121,3 @@ Rule Conflict Type	Winner Based On
 Both use !important	Higher specificity wins
 Equal specificity & no !important	Later (lower in file) rule wins
 Higher specificity vs lower specificity	Higher specificity wins (if no !important)
-
-
-
-
-
-
- 
-
-  
-  
