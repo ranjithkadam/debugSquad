@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Descendant Combinator Practice</title>
+    
+    <link rel="stylesheet" href="/css/selectors/decendantCombinator.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Main Heading</h1>
+
+        <section class="intro">
+            <p>This paragraph is inside section.intro.</p>
+            <span>This span is inside section.intro.</span>
+        </section>
+
+        <div class="content">
+            <article>
+                <p>This paragraph is inside article (which is inside .content).</p>
+                <div class="nested">
+                    <p>This paragraph is deeply nested inside .nested.</p>
+                    <div class="deepnested">
+                        <p>This paragraph is deeply nested inside .deepnested.</p>
+                    </div>
+
+                <p>This paragraph is inside article (which is inside .content).</p>
+            </article>
+        </div>
+
+        <footer>
+            <p>This paragraph is inside the footer.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
