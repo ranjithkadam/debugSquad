@@ -1,0 +1,27 @@
+.container {
+    border: 1px solid black;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+h1 {
+    background-color: rgb(242, 132, 132);
+}
+
+h1~.generalSibling1 {
+    background-color: rgb(202, 158, 243);
+    padding: 1px;
+    margin-bottom: 2px;
+}
+
+h1~.generalSibling2 {
+    background-color: rgb(252, 171, 252);
+    padding: 1px;
+    margin-bottom: 2px;
+}
+
+h1~.generalSibling3 {
+    background-color:rgb(245, 188, 82);
+    padding: 1px;
+    margin-bottom: 5px;
+}
