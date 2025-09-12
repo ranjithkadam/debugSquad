@@ -1,0 +1,16 @@
+[href="https://achieversit.com"]{
+    color: red;
+    font-size: 100px;
+}
+
+[placeholder]{
+    background-color: violet;
+    height: 20vh;
+    width: 100vh;
+    font-size: larger;
+    
+   
+}
+[type]{
+    border:2px solid rgb(233, 38, 255);
+}
