@@ -1,0 +1,12 @@
+.nestedpara::first-letter{
+    color: red;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 50px;
+}
+.outerpara::first-letter{
+    color: blue;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 50px;
+}
