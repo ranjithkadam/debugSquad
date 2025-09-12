@@ -8,7 +8,7 @@
 
     - Combinators
         - Descendant Combinator ( ) -  targets elements that are descendants of a specified element
-        - Child Combinator ( < ) -       targets elements that are direct children of a specified element
+        - Child Combinator ( > ) -       targets elements that are direct children of a specified element
         - Adjacent Sibling Combinator ( + )-  targets an element that is directly after a specified element
         - General Sibling Combinator ( ~ ) -  targets all siblings of a specified element that follow it
 
