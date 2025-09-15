@@ -25,16 +25,16 @@ h4 {
     background-color: bisque;    
 }
 
-.flex {
+.fixed {
     background-color: chartreuse;
-    position:flex;
-    left: 100%;
-    top: 10px;
+    position:fixed; 
+    top: 100px;
+    left:50px;
 }
 
 .sticky {
     background-color: coral;
     position: sticky;
-    bottom:200px;
-    left: 200px;
+   top: 100px;
+    left:50px;
 }
