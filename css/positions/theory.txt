@@ -57,21 +57,15 @@ Great for sticky headers or sidebars.
 ⚠️ Make sure the parent element has a height or the sticky effect may not work.
 ---
 
-5. **flex (display: flex)** – *Not a position value!*
-❗ Clarification:
-`flex` is **not** a value of the `position` property – it is a value of the `display` property.
-It is used to **lay out items** in a row or column with flexible sizing and alignment.
-You use `display: flex` to control layout, not positioning like `absolute` or `sticky`.
+5.fixed:
+The element is removed from the normal flow.
+Positioned relative to the browser window.
+It stays in place even when scrolling.
 
-### 🧪 Example:
-
-```html
-<div style="display: flex;">
-  <div>Item 1</div>
-  <div>Item 2</div>
-</div>
-```
-
+div{
+position: fixed;
+top: 0;
+right: 0; }
 ---
 
 🧠 Bonus Tips for Beginners
@@ -82,7 +76,7 @@ You use `display: flex` to control layout, not positioning like `absolute` or `s
 * Use **relative** if you want to slightly move an element.
 * Use **absolute** to place something freely on the page or inside a parent.
 * Use **sticky** to keep headers or menus visible on scroll.
-* Use **flex** to create modern layouts like navbars, cards, etc.
+ 
 
 💡 Common Mistakes:
 
