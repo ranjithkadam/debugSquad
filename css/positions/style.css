@@ -1,0 +1,40 @@
+ 
+
+h4 {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.static {
+    background-color: pink;
+    position: static;
+    left: 50px;
+}
+
+.relative {
+    background-color: aquamarine;
+    position:relative;
+    left: 50px
+}
+
+.absolute {
+    background-color: bisque;    
+}
+
+.flex {
+    background-color: chartreuse;
+    position:flex;
+    left: 100%;
+    top: 10px;
+}
+
+.sticky {
+    background-color: coral;
+    position: sticky;
+    bottom:200px;
+    left: 200px;
+}
