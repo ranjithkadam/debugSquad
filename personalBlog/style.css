@@ -1,25 +1,24 @@
 * {
-    margin-left: 20px;
+    margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 
-h1, h2{
-    font-weight: 700;    
+h1,
+h2 {
+    font-weight: 700;
 }
 
-p{
+p {
     font-weight: 400;
 }
 
 body {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin-left: 260px;
-    margin-right: 150px;
+    margin-left: 200px;
+    margin-right: 160px;
     margin-top: 30px;
-    padding-right:10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
 }
 
 img {
@@ -30,16 +29,16 @@ img {
 
 header {
     height: 50px;
-    width: 98%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
 }
 
 header h2 {
     font-family: "Brush Script MT", cursive;
-    width: 60%;
+    width: 80%;
 }
 
 ul {
@@ -49,12 +48,21 @@ ul {
     justify-content: space-evenly;
     padding-left: 30px;
     width: 40%;
-
 }
 
 a {
     text-decoration: none;
     color: black;
+    height: 30px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+a:active{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .body {
@@ -63,13 +71,12 @@ a {
     justify-content: space-between;
 }
 
-.intro{
+.intro {
     width: auto;
     height: auto;
     position: relative;
-    margin: 0;
 }
- 
+
 .intro input {
     height: 50px;
     width: 230px;
@@ -80,8 +87,8 @@ a {
     border-style: none;
 }
 
-.intro input:active{
-     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+[type="button"]:active {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .Web {
@@ -89,12 +96,9 @@ a {
     border-radius: 10px;
     width: auto;
     height: auto;
-    margin-top: 15px;
     margin-top: 20px;
-}
-
-.Web {
-    margin-bottom: 40px;
+    padding: 10px;
+    margin-bottom: 30px;
 }
 
 .founders {
@@ -103,23 +107,20 @@ a {
     width: auto;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: relative;
-
+    padding: 10px;
 }
 
 .amitKumar,
 .shreya {
     padding-top: 70px;
-    padding-right:10px ;
-    height: 200px;
-    width: 550px;
+    height: 170px;
+    width: 400px;
     border-radius: 10px;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     position: relative;
-    left: -10px;
-
 }
 
 .amitKumar {
@@ -135,27 +136,27 @@ a {
     height: 100px;
     width: 100px;
     position: absolute;
-    right: 140px;
+    right: 150px;
     top: -15%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .amitKumar img {
-    height:100px;
+    height: 100px;
     width: 100px;
     position: absolute;
-    left: 130px;
+    left: 150px;
     top: -15%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .projects {
+    padding: 10px;
     margin-top: 30px;
     height: auto;
     width: auto;
     border: 1px solid rgb(164, 162, 162);
     border-radius: 10px;
-
 }
 
 .projects input {
@@ -164,7 +165,6 @@ a {
     border: 1px solid rgb(164, 162, 162);
     border-radius: 10px;
     padding-left: 20px;
-
 }
 
 .idea input {
