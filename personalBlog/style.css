@@ -1,0 +1,183 @@
+* {
+    margin-left: 20px;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2{
+    font-weight: 700;    
+}
+
+p{
+    font-weight: 400;
+}
+
+body {
+    margin-left: 260px;
+    margin-right: 150px;
+    margin-top: 30px;
+}
+
+img {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+header {
+    height: 50px;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+header h2 {
+    font-family: "Brush Script MT", cursive;
+    width: 60%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 30px;
+    width: 40%;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro{
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: 0;
+}
+ 
+.intro input {
+    height: 50px;
+    width: 230px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    font-size: large;
+    border-style: none;
+}
+
+.intro input:active{
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.Web {
+    border: 1px solid rgb(164, 162, 162);
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    margin-top: 15px;
+    margin-top: 20px;
+}
+
+.Web {
+    margin-bottom: 40px;
+}
+
+.founders {
+    margin-top: 50px;
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+
+}
+
+.amitKumar,
+.shreya {
+    padding-top: 70px;
+    padding-right:10px ;
+    height: 200px;
+    width: 550px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    left: -10px;
+
+}
+
+.amitKumar {
+    background-color: rgb(102, 102, 110);
+    color: whitesmoke;
+}
+
+.shreya {
+    background-color: rgb(251, 196, 206);
+}
+
+.shreya img {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 140px;
+    top: -15%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.amitKumar img {
+    height:100px;
+    width: 100px;
+    position: absolute;
+    left: 130px;
+    top: -15%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.projects {
+    margin-top: 30px;
+    height: auto;
+    width: auto;
+    border: 1px solid rgb(164, 162, 162);
+    border-radius: 10px;
+
+}
+
+.projects input {
+    height: 50px;
+    width: 400px;
+    border: 1px solid rgb(164, 162, 162);
+    border-radius: 10px;
+    padding-left: 20px;
+
+}
+
+.idea input {
+    height: 100px;
+    width: 700px;
+}
+
+.idea input::placeholder {
+    position: absolute;
+    top: 15px
+}
+
+.submit input {
+    width: 200px;
+    margin-bottom: 20px;
+    background-color: rgb(131, 7, 220);
+    color: white;
+    border-style: none;
+    font-size: large;
+}
