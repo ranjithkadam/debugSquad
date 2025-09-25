@@ -1,0 +1,41 @@
+
+body{
+        font-family: Arial, Helvetica, sans-serif;
+
+}
+.border{
+    border: 2px solid black;
+    padding: 0%;
+    margin: 10px;
+}
+.box{
+    background-color: aqua;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+ }
+
+.translate:hover{
+    transform:translate(1000px);
+    transition:all 3s ease-in ;
+}
+
+.rotate:hover{
+    transform:rotate(24deg);
+    transition:all 3s ease;
+}
+
+.scale:hover{
+    transform:scale(1.2);
+    transition:all 3s ease;
+}
+
+.skew:hover{
+    transform:skew(360deg, 20deg);
+    transition:all 3s ease;
+}
