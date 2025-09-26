@@ -1,0 +1,44 @@
+.container{
+    height: 80vh;
+    width: 80%;
+    background-color: antiquewhite;
+    position: relative;
+    margin: 50px auto;
+     border-radius: 10px;
+    border: 1px solid black;
+     
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color:red;
+    border: 3px solid groove;
+    box-shadow: 0px 0px 10px rgb(58, 59, 60);
+    animation: spin 3s ease-in-out infinite alternate;  
+       
+}
+ 
+@keyframes spin{
+    0%{
+        transform: translateX(0) translateY(0);
+    }
+
+    25% {
+        transform:translateX(905px)
+    }
+
+    50% {
+        transform:translateX(905px) translateY(375px);
+    }
+
+    75%{
+         transform:translateX(905px) translateY(375px) translateX(-905px);
+    }
+
+    100%{
+        transform:translateX(905px) translateY(375px) translateX(-905px) translateY(-370px);
+    }
+}
+
+ 
