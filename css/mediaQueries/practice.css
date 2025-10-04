@@ -1,0 +1,53 @@
+.container{
+    height: 80px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    margin:200px auto;
+}
+
+.container .box{
+    height: 78px;
+    width: 78px;
+    background-color: chartreuse;
+    animation: swipe 2s linear alternate infinite;
+}
+
+@keyframes swipe {
+    from{
+        transform: translate(0px);
+    }
+
+    to{
+        transform: translate(95vw);
+    }
+}
+
+@keyframes swipe2 {
+    from{
+        transform: translateY(-43vh);
+    }
+
+    to{
+        transform: translateY(43vh);
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .container{
+    height: 100vh;
+    width: 80px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    margin: auto 200px;
+}
+
+.container .box{
+    height: 78px;
+    width: 78px;
+    background-color: chartreuse;
+    animation: swipe2 2s linear alternate infinite;
+}
+}
