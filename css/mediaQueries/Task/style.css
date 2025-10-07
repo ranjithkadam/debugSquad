@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Desktap Mode */
+/* Headers CSS Starts From here */
+header {
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+header .logodiv {
+    width: 50%;
+}
+
+.logo {
+    width: 150px;
+    height: 65px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    background-color: rgb(249, 249, 248);
+    border-radius: 2px;
+    padding: 3%;
+}
+
+li,
+a {
+    flex-shrink: 1;
+    background-color: black;
+    color: white;
+
+}
+
+ul li:hover,
+a:hover {
+    transform: translateY(-3px);
+    transition: all .5s ease;
+}
+
+.navbar {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-grow: 1;
+}
+
+/* Header CSS Ends here */
+
+
+/* Card Section Starts Form here */
+.card {
+    width: 30%;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    display: flex;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.card .image {
+    height: 150px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 30px;
+    object-fit: contain;
+}
+
+.card .description {
+    padding-top: 10px;
+}
+
+input {
+    height: 40px;
+    width: 80%;
+    font-size: large;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    margin-bottom: 15px;
+    border-style: none;
+}
+
+input:active {
+    background-color: rgb(212, 186, 40);
+    color: black;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Card Section Ends here */
+
+/* Footer starts here */
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;    
+}
+
+footer .part {
+    /* background-color: rgb(38, 38, 38); */
+    width: 20%;
+    flex-grow: 1;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+/* Footer Ends here */
+
+/* tablet Mode  */
+@media (max-width:768px) {
+    .card {
+        width: 40%;
+    }
+
+    footer .part {
+        width: 40%;
+        justify-content: space-evenly;
+    }
+}
+
+/* Mobiles and Small Screens */
+
+@media (max-width:426px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        margin-bottom: 10px;
+    }
+
+    .card {
+        width: 50%;
+    }
+
+    footer .part {
+        width: 50%;
+        justify-content: center;
+    }
+}
