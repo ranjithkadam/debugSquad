@@ -1,0 +1,144 @@
+*{
+    margin: 1px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.portfolioBody img{
+border-radius: 50%;
+}
+
+.portfolioBody{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(202, 152, 249);
+}
+
+.intro{
+    margin-left: 40px;
+}
+.intro p{
+    margin-top: 20px;
+}
+
+.portfolioBody button{
+    height: 50px;
+    width: 250px;
+    margin-top: 30px;
+    border-radius: 50px;
+    border-style: none;
+    background-color: black;
+}
+
+button a{
+    text-decoration: none;
+    color:white;
+    font-size: large;
+}
+
+button:hover, [type="button"]:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: translateY(-5px);
+    transition: all .5s ease;
+}
+
+button:hover, [type="button"]:active{
+    color: gold;
+}
+
+.skills-Set, .Projects{
+    margin-top: -5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(202, 152, 249);
+}
+
+.skills-Set .skills{
+width: 48%;
+margin-top: 20px;
+padding: 5px;
+height: 120px;
+border-radius: 10px;
+background-color:rgb(216, 186, 245);
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.Projects .Project{
+    width: 30%;
+    padding: 5px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 20px auto;
+    background-color:rgb(216, 186, 245);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.skills p, .Projects p{
+    margin-top: 20px;
+}
+
+.Projects{
+    background-color: rgb(202, 152, 249);
+    margin-top: -5px;
+    display:flex;
+
+}
+
+.contact-feedback{
+    margin-top: 0px;
+    background-color: rgb(202, 152, 249);
+}
+
+.details{
+    display: flex;
+    line-height:25px;
+}
+
+.contact-feedback{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.contact-details, .feedback{
+background-color: whitesmoke; 
+border-radius: 10px;
+padding: 10px;
+}
+
+.contact-details{
+    margin-right:50px;
+    width: 40%;
+    height: 80%;
+}
+
+.feedback{
+    width: 60%;
+}
+
+input{
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+[type="button"]{
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: black;
+    color: white;
+    font-size: large;
+    padding: 5px;
+}
+
+::placeholder{
+    font-size: 13px;
+    text-align: center;
+    
+}
