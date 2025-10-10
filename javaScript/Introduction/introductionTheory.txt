@@ -1,0 +1,167 @@
+<!-- 
+
+ JavaScript Quick Recap Notes
+
+1. Basics
+
+JavaScript (JS) is a high-level, lightweight, interpreted language.
+
+It is dynamic and interactive — can modify web content in real time.
+
+Used in both frontend (browser) and backend (Node.js).
+
+
+
+---
+
+2. Uses of JavaScript
+
+Manipulate the DOM (change HTML and CSS).
+
+Handle events (clicks, keypresses, etc.).
+
+Validate forms before submission.
+
+Create animations and visual effects.
+
+Fetch data from APIs.
+
+Store data in the browser using localStorage, sessionStorage, or cookies.
+
+
+
+---
+
+3. History
+
+Created by Brendan Eich in 1995.
+
+Initially called Mocha, then LiveScript, finally JavaScript.
+
+Standardized as ECMAScript (ES) in 1997.
+
+
+
+---
+
+4. Versions (Main)
+
+Version	Year	Key Features
+
+ES1	1997	First version
+ES5	2009	Strict mode, JSON support
+ES6	2015	let, const, arrow functions, classes, promises
+
+
+
+---
+
+5. Key Features
+
+Interpreted language (no compilation).
+
+Object-oriented.
+
+Event-driven.
+
+Prototype-based.
+
+Asynchronous (supports Promises and async/await).
+
+
+
+---
+
+6. Variables
+
+Keyword	     Scope	    Reassign	Redeclare
+
+var 	    Function	  Yes	       Yes
+let	        Block	      Yes 	       No
+const	    Block	       No	       No
+
+
+---
+
+7. Scopes
+
+Global Scope: Accessible everywhere.
+
+Function Scope: Declared inside a function.
+
+Block Scope: Declared inside {} using let or const.
+
+
+
+---
+
+8. Data Types
+
+Number | String | Boolean | Object | Undefined | Null | Symbol | BigInt
+
+
+---
+
+9. Important Concepts
+
+DOM (Document Object Model): Structure of the web page JS can modify.
+
+Event Listeners: Detect user actions (e.g., onclick, onchange).
+
+Console: Used for debugging (console.log()).
+
+Operators: +, -, *, /, %, ==, ===, !=, !==, >, <, etc.
+
+
+
+---
+
+Common Questions and Answers
+
+Q1. Who created JavaScript?
+Brendan Eich in 1995.
+
+Q2. What is ECMAScript?
+The standard specification for JavaScript.
+
+Q3. Why is JavaScript used?
+To make web pages dynamic and interactive.
+
+Q4. Difference between var, let, and const?
+
+var is function-scoped, reassignable, and redeclarable.
+
+let is block-scoped and reassignable.
+
+const is block-scoped and cannot be reassigned.
+
+
+Q5. What new features were added in ES6?
+let, const, arrow functions, classes, template literals, promises, and modules.
+
+Q6. What is the DOM?
+A programming interface that represents the structure of a web page, allowing JavaScript to modify content and style.
+
+Q7. What is the difference between client-side and server-side JavaScript?
+
+Client-side: Runs in the browser (UI interactions, form validation).
+
+Server-side: Runs on the server (database, file handling using Node.js).
+
+
+
+---
+
+Quick Tips for Beginners
+
+Practice writing small JavaScript programs daily.
+
+Learn and use ES6+ features.
+
+Use the browser console to test code.
+
+Understand asynchronous concepts (callbacks, promises, async/await).
+
+Build small projects like a to-do list, calculator, or API fetcher.
+
+-->
