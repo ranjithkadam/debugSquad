@@ -1,0 +1,123 @@
+*********** JavaScript Scope *****************
+
+In JavaScript, scope refers to the current context of code—which determines the accessibility (visibility) of variables.
+
+There are three main types of scope:
+_____________________________________________________________________________________________________________________________________
+
+1. Global Scope ******
+Definition:
+
+A variable declared outside of any function or block has Global Scope.
+
+These variables can be accessed and modified anywhere in the code.
+
+Syntax:
+var globalVar = "I am global";
+
+function show() {
+  console.log(globalVar); // Accessible here
+}
+
+show();
+console.log(globalVar); // Also accessible here
+
+Key Points:
+
+Variables declared with var, let, or const outside functions are global.
+
+Global variables can be overwritten from anywhere, which can lead to issues in larger applications.
+_____________________________________________________________________________________________________________________________________
+
+
+2. Function Scope (Local Scope) ***********
+Definition:
+
+Variables declared inside a function are in Function Scope.
+
+They are only accessible within that function, not outside.
+
+Syntax:
+function greet() {
+  var name = "Alice";
+  console.log("Hello " + name); // Accessible here
+}
+
+greet();
+// console.log(name); // Error: name is not defined
+
+Key Points:
+
+Only functions create a new function scope.
+
+Variables declared with var, let, or const inside a function are local to that function.
+_____________________________________________________________________________________________________________________________________
+
+
+3. Block Level Scope 
+
+Definition:
+
+Variables declared inside curly braces {} (like in loops or if statements) using let or const are block-scoped.
+
+These variables are only accessible inside that block.
+
+Syntax:
+{
+  let blockVar = "I exist only here";
+  console.log(blockVar); // Accessible
+}
+// console.log(blockVar); // Error: blockVar is not defined
+
+Key Points:
+
+let and const have block scope, but var does not.
+
+Useful for controlling the visibility of variables in loops, conditionals, etc.
+
+Difference Table:
++------------------------------------------------------------------------------------------------+
+|    Scope Type	    |   Created By	          |   Accessible From	       |     Keyword Support |
+|------------------------------------------------------------------------------------------------|
+|    Global Scope   |	Outside any function  |	 Anywhere	               |     var, let, const |
+|    Function Scope	|   Inside a function	  |  Only within that function |    var, let, const  |
+|    Block Scope	|   Inside {} block	      |  Only inside that block	   |    let, const       |
++------------------------------------------------------------------------------------------------+
+_____________________________________________________________________________________________________________________________________
+
+Interview Questions and Answers for Freshers.
+
+Q1. What is the difference between var, let, and const in terms of scope?
+
+A:
+
+var is function-scoped.
+
+let and const are block-scoped.
+
+So, let and const cannot be accessed outside of their block {}, but var can be accessed outside the block if it's inside a function.
+
+Q2. What is Global Scope in JavaScript?
+
+A:
+Global Scope means a variable is declared outside of all functions and blocks. It can be accessed from any part of the program.
+
+Q3. What is Function Scope in JavaScript?
+
+A:
+Function Scope means a variable declared inside a function is only accessible within that function.
+
+Q4. What is Block Scope in JavaScript?
+
+A:
+Block Scope refers to variables declared inside a {} block using let or const. These variables cannot be accessed outside the block.
+
+Q5. Can you access a var variable declared inside a block from outside?
+
+A:
+Yes, if var is used inside a block but outside of a function, it is still globally or functionally scoped, not block scoped.
+
+{
+  var test = 10;
+}
+console.log(test); // 10
