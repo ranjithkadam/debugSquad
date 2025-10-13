@@ -29,7 +29,7 @@ name=null;
  console.log(name, typeof(name));
 
  //6.Bigint
- let big=45678909;
+ let big=95678909876545609;
  console.log(big, typeof(big));
 
 

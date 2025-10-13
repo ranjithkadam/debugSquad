@@ -1,0 +1,27 @@
+Non-Primitive (Reference) Data Types
+
+Non-primitive data types are objects, including functions and arrays. They can store multiple values and are mutable and stored by reference.
+
+Types of Non-Primitive Data Types:
+
+Object
+Example:
+
+let person = {
+  name: "John",
+  age: 30
+};
+
+
+Array
+Example:
+
+let colors = ["red", "green", "blue"];
+
+
+Function
+Example:
+
+function greet() {
+  console.log("Hello!");
+}
