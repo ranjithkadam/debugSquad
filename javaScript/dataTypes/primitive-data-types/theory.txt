@@ -1,0 +1,26 @@
+Primitive Data Types
+
+Primitive data types are the most basic data types in JavaScript. They represent single values and are immutable and stored by value.
+
+Types of Primitive Data Types:
+
+String – represents textual data
+Example: let name = "Alice";
+
+Number – represents numeric values
+Example: let age = 25;
+
+Boolean – represents true or false
+Example: let isOnline = true;
+
+Undefined – a variable that is declared but not assigned a value
+Example: let a;
+
+Null – represents the intentional absence of any object value
+Example: let b = null;
+
+BigInt – used for integers larger than the safe integer limit
+Example: let big = 12345678901234567890n;
+
+Symbol – used to create unique identifiers
+Example: let sym = Symbol("id");
