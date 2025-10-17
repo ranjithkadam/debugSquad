@@ -74,6 +74,11 @@ console.log(result);
 
 // let res= (10>=11) ? "Yes True":       //It showing error because ternary operator must and should expect 3 operants.
 
+a="2"-3;
+ b=2+"3";
+console.log(b);
+console.log(a);
+
 
 
 
