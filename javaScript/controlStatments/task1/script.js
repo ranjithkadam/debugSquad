@@ -19,12 +19,12 @@ if(purchaseAmount< 1000){
     console.log("Total Bill is: "+purchaseAmount);
 }
 
-else if((purchaseAmount>=1000) && (purchaseAmount<=2000)){
+else if((purchaseAmount>=1000) && (purchaseAmount<2000)){
     console.log("Ten Percent(10%) Discount.");
     var totalAmount= purchaseAmount* (1- (10/100));
  }
 
-else if((purchaseAmount>=2000) && (purchaseAmount<=5000)){
+else if((purchaseAmount>=2000) && (purchaseAmount<5000)){
     console.log("Twenty percent(20%) discount.");
     var totalAmount= purchaseAmount* (1- (20/100));
  }
