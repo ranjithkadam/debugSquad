@@ -15,37 +15,37 @@ if(subject1>35 && subject2>35 && subject3>35){
     console.log("Average marks from All subjects: ", ((subject1+subject2+subject3)/3));
 }
 
-else if(subject1<35 && subject2>35 && subject3>35){
+else if(subject1<=35 && subject2>35 && subject3>35){
     console.log("Supplementary.");
     console.log("Average marks from All subjects: ", ((subject1+subject2+subject3)/3));
 
 }
 
-else if(subject1>35 && subject2<35 && subject3>35){
+else if(subject1>35 && subject2<=35 && subject3>35){
     console.log("Supplementary.");
     console.log("Average marks from All subjects: ", ((subject1+subject2+subject3)/3));
 
 }
 
-else if(subject1>35 && subject2>35 && subject3<35){
+else if(subject1>35 && subject2>35 && subject3<=35){
     console.log("Supplementary.");
     console.log("Average marks from All subjects: ", ((subject1+subject2+subject3)/3));
 
 }
 
-else if(subject1<=35 && subject2<=35 && subject3>=35){
+else if(subject1<=35 && subject2<=35 && subject3>35){
 console.log("Failed");
 console.log("Average marks from All subjects: ", ((subject1+subject2+subject3)/3));
 
 }
 
-else if(subject1<=35 && subject2>=35 && subject3<=35){
+else if(subject1<=35 && subject2>35 && subject3<=35){
 console.log("Failed");
 console.log("Average marks from All subjects: ", ((subject1+subject2+subject3)/3));
 
 }
 
-else if(subject1>=35 && subject2<=35 && subject3<=35){
+else if(subject1>35 && subject2<=35 && subject3<=35){
 console.log("Failed");
 console.log("Average marks from All subjects: ", ((subject1+subject2+subject3)/3));
 }
