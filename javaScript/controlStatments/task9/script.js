@@ -15,11 +15,11 @@ if(usage<5 && usage>0){
 console.log("Basic Plan.");
 }
 
-else if(usage<=5 && usage>20){
+else if(usage>=5 && usage<20){
     console.log("Standard Plan.");
 }
 
-else if(usage<=20 && usage>50){
+else if(usage>=20 && usage<50){
     console.log("Premium Plan.")
 }
 
