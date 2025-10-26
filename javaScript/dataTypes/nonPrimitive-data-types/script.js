@@ -8,7 +8,7 @@
 //There are majorly 3 types:
 
 //1.Arrays: it defines the elements stored in a sequece orders using single variable name. wheather it is 
-            //same or different kind of data( number, string, bool, null, insted array,ect..)
+            //same or different kind of data( number, string, bool, null, nested array,etc..)
             //Syntax: varType varName=[element1, element2..];
 
             let arr=[22,3,4,3,4,"ranjith",true,[54,65,70]];
