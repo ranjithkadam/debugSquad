@@ -8,47 +8,79 @@
 // Additionally, if the ride time is during night hours (e.g., after ten PM or
 // before five AM), add a twenty percent night charge. If the user has a promo code, apply an extra discount.
 
-let distance=parseInt(prompt("Enter Distance: "));
-let rideTime=parseInt(prompt("Enter rideTime(5am - 22pm): "));
+let distance = parseInt(prompt("Enter Distance: "));
+let rideTime = parseInt(prompt("Enter rideTime(24Hours): "));
+let code = prompt("You have Promo Code(yes/no): ");
 
-var minimumFare=100;
-var mid_tire_fare=200;
-var long_distance=300;
+var minimumFare = 100;
+var mid_tire_fare = 200;
+var long_distance = 300;
+var promo = 50
 
-if(distance<5 && distance>1){
-    if((rideTime<5 && rideTime>=0) || (rideTime>22 && rideTime<24))
-        {
-        let totalAmount= minimumFare+(minimumFare/5);
-        console.log("Ride Charges are(Night Charges Added): "+ totalAmount);
+if (distance < 5 && distance > 1) {
+    if ((rideTime < 5 && rideTime >= 0) || (rideTime > 22 && rideTime < 24)) {
+        if (code == "yes") {
+            let totalAmount = minimumFare + (minimumFare / 5);
+            console.log("Ride Charges are(Night Charges Added) and Promo discount Added: " + (totalAmount - promo));
+        }
+        else {
+            let totalAmount = minimumFare + (minimumFare / 5);
+            console.log("Ride Charges are(Night Charges Added): " + (totalAmount));
+        }
     }
-    else{
-        console.log("Ride Charges are: "+ minimumFare);
+
+    else {
+        if (code == "yes") {
+            console.log("Ride Charges are after Applying Promo Code: " + (minimumFare - promo));
+        }
+        else {
+            console.log("Ride Charges are: " + minimumFare);
+        }
     }
 }
 
-else if(distance>=5 && distance<15){
-    //  if(rideTime<5 && rideTime>22){
-    if((rideTime<5 && rideTime>=0) || (rideTime>22 && rideTime<24))
-            {
-        let totalAmount= mid_tire_fare+ (mid_tire_fare/5);
-        console.log("Ride Charges are(Night Charges Added): "+ totalAmount);
+else if (distance >= 5 && distance < 15) {
+    if ((rideTime < 5 && rideTime >= 0) || (rideTime > 22 && rideTime < 24)) {
+        if (code == "yes") {
+            let totalAmount = mid_tire_fare + (mid_tire_fare / 5);
+            console.log("Ride Charges are(Night Charges Added) and Promo Code Added: " + (totalAmount - promo));
+        }
+        else {
+            let totalAmount = mid_tire_fare + (mid_tire_fare / 5);
+            console.log("Ride Charges are(Night Charges Added): " + totalAmount);
+        }
     }
-    else{
-        console.log("Ride Charges are: "+ mid_tire_fare);
-    }
-}
-
-else if(distance>=15){
-    if((rideTime<5 && rideTime>=0) || (rideTime>22 && rideTime<24))
-    {
-        let totalAmount= long_distance+(long_distance/5);
-        console.log("Ride Charges are(Night Charges Added): "+ totalAmount);
-    }
-    else{
-        console.log("Ride Charges are: "+ long_distance);
+    else {
+        if (code == "yes") {
+            console.log("Ride Charges are after Applying Promo Code: " + (mid_tire_fare - promo));
+        }
+        else {
+            console.log("Ride Charges are: " + mid_tire_fare);
+        }
     }
 }
 
-else{
+else if (distance >= 15) {
+    if ((rideTime < 5 && rideTime >= 0) || (rideTime > 22 && rideTime < 24)) {
+        if (code == "yes") {
+            let totalAmount = long_distance + (long_distance / 5);
+            console.log("Ride Charges are(Night Charges Added) and Promo Code Added: " + (totalAmount - promo));
+        }
+        else {
+            let totalAmount = long_distance + (long_distance / 5);
+            console.log("Ride Charges are(Night Charges Added): " + totalAmount);
+        }
+    }
+    else {
+        if (code == "yes") {
+            console.log("Ride Charges are: " + (long_distance - promo));
+        }
+        else {
+            console.log("Ride Charges are: " + long_distance);
+        }
+    }
+}
+
+else {
     console.log("Invalid Details of Ride!!")
 }
