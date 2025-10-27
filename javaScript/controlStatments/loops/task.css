@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+img {
+    height: 100px;
+}
+
+body>h1 {
+    font-weight: 900;
+    color: blue;
+}
+
+.caption,
+label {
+    color: #606770;
+}
+
+form {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5%;
+    width: 35vw;
+    height: auto;
+    box-sizing: border-box;
+
+}
+
+form h2,
+h2~p {
+    text-align: center;
+}
+
+.name,
+.mobile-pass,
+.dateofBirth,
+.gender {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+}
+
+.box {
+    border: 1px solid rgb(171, 169, 169);
+    padding: 7px 25px;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+.mobile-pass {
+    flex-direction: column;
+}
+
+.names,
+[type="password"],
+[type="text"],
+select {
+    flex-grow: 1;
+    height: 2rem;
+    border: 0px solid (171, 169, 169);
+}
+
+::placeholder {
+    font-size: medium;
+}
+
+.small {
+    font-size: x-small;
+    color: #606770;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.button>button {
+    background-color: rgb(26, 167, 26);
+    border-style: none;
+    padding: 3% 14%;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: 700;
+    color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.account {
+    margin-top: 10px;
+    text-align: center;
+
+}

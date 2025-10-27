@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaceBook Login Page</title>
+    <link rel="stylesheet" href="./task.css">
+
+</head>
+
+<body>
+    <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="logo">
+    <form action="#">
+        <div class="header">
+            <h2>Create a new account</h2>
+            <p class="caption">It's quick and easy.</p>
+            <hr>
+        </div>
+
+        <div class="name">
+            <input type="text" class="names" placeholder="Firstname" required>
+            <input type="text" class="names" placeholder="Surname" required>
+        </div>
+
+        <label for="dob">Date of birth</label>
+        <div class="dateofBirth">
+            <select name="" id="date">
+                <option value="#"></option>
+            </select>
+            <select name="" id="month">
+                <option value="#"></option>
+            </select>
+            <select name="" id="year">
+                <option value="#"></option>
+            </select>
+        </div>
+
+        <div class="gender">
+            <div class="box">
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+            </div>
+            <div class="box">
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+            </div>
+            <div class="box">
+                <label for="custom">Custom</label>
+                <input type="radio" id="custom" name="gender" value="custom" required>
+            </div>
+        </div>
+
+        <div class="mobile-pass">
+            <input type="text" placeholder="Mobile number or email address">
+            <input type="password" placeholder="New password">
+        </div>
+        <p class="small">People who use our service may have uploaded your contact information to Facebook. <a
+                href="https://www.facebook.com/help/637205020878504"> Learn more.</a></p>
+        <p class="small">By clicking Sign Up, you agree to our <a
+                href="https://www.facebook.com/legal/terms/update">Terms</a>, <a
+                href="https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0">Privacy
+                Policy</a> and <a
+                href="https://www.facebook.com/privacy/policies/cookies/?entry_point=cookie_policy_redirect&entry=0">Cookies
+                Policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
+        <div class="button">
+            <button>Sign Up</button>
+        </div>
+        <div class="account">
+            <a
+                href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzYxNTcwMzk5LCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D">Already
+                have an account</a>
+        </div>
+
+    </form>
+
+    <!-- ==========================JS========================================= -->
+    <script>
+        let date = document.getElementById("date");
+        for (let day = 1; day <= 31; day++) {
+            date.innerHTML += `<option value=${day}>${day}</option>`
+        }
+
+        let arr = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        let month = document.getElementById("month");
+        for (let i = 0; i < arr.length; i++) {
+            month.innerHTML += `<option value=${arr[i]}> ${arr[i]}</option>`
+        }
+
+        let year = document.getElementById("year");
+        for (let i = 2025; i >= 1905; i--) {
+            year.innerHTML += `<option value=${i}>${i}</option>`;
+        }
+    </script>
+</body>
+
+</html>
