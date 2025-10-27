@@ -43,7 +43,7 @@ h2~p {
 .gender {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 1%;
     flex-wrap: wrap;
     padding-bottom: 5%;
 }
@@ -64,6 +64,8 @@ h2~p {
 [type="text"],
 select {
     flex-grow: 1;
+    flex-basis: auto;
+    flex-shrink: 1;
     height: 2rem;
     border: 0px solid (171, 169, 169);
 }
