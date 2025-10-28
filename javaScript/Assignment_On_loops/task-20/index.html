@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator Table</title>
+</head>
+<body>
+
+    <h2>Tax Calculator Table</h2>
+
+    <table border="1" cellspacing="0" id="values">
+        <tr><th>Product</th>
+            <th>Price</th>
+            <th>GST(18%)</th>
+        <th>Final Price</th></tr>    
+     </table>
+
+    <script>
+         let prices = [{product:"Oneplus Phone", price:35000},
+         {product:"Iphone ", price:50000},
+         {product:"Samsung Phone", price:25000},
+         {product:"Vivo Phone", price:30000},
+                 ];
+        values=document.getElementById("values")
+         for(let i=0; i<prices.length;i++){
+        let gst= prices[i].price*(18/100);
+        values.innerHTML+=`
+        <tr><td>${prices[i].product}</td> 
+            <td>${prices[i].price}</td>
+            <td>${gst}</td>
+            <td>${prices[i].price+gst}</td></tr>`;     
+        }
+         
+    </script>
+</body>
+</html>

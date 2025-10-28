@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Products by Type</title>
+
+    <style> 
+    #cards,h2{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 2%;
+        }
+        .card{
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: azure;
+            width:22%;
+            text-align: center;
+            border-radius: 5%;
+            padding: 20px;
+            margin-bottom: 2%;    
+        }
+
+        .card:hover{
+            transform: translateY(-3px);
+            transition: transform .3s ease;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Show Products by Type</h2>
+    <section id="cards"></section>
+    
+
+     <script>
+        let categories = [
+        { categorie: "Clothing", items: ["Menswares", "Ladieswares", "childrenwares"] },
+        { categorie: "Electronics", items: ["TVs", "Mobiles", "Laptops"] },
+        { categorie:"Accessories", items:["Watches","Shoes","ChapryItems"]}
+            ];
+            let cards=document.getElementById("cards");
+            for(let i=0; i< categories.length; i++){
+                cards.innerHTML+=(`&nbsp; <h2>${categories[i].categorie}</h2><br>`);
+
+                 for(let j=0; j < categories[i].items.length; j++){
+                    cards.innerHTML+=`
+                    <div class="card"><h4>${categories[i].items[j]}<h4></div>`;
+                }
+                document.write("<br>")
+            }
+    </script>
+</body>
+</html>

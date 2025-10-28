@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Sale Display</title>
+</head>
+<body>
+    <h2>Flash Sale Display</h2>
+    
+
+    <script>
+         products= [
+                { name: "Keyboard", price: 300 },
+                { name: "Mouse", price:100 },
+                { name: "Charger", price: 200 },
+                { name: "KeyBoard", price:300},
+                { name: "CPU", price:12000 }
+            ];
+
+        let i=0
+        do{
+            let discount=products[i].price*(20/100)
+            document.write(`After applying 20% discount on ${products[i].name} is: ${products[i].price - discount}<br>`);
+            i++;
+        }while(i < products.length);
+    </script>
+</body>
+</html>

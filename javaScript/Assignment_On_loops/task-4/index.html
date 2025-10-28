@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Build Order Summary Table</title>
+</head>
+
+<body>
+    <h2> Build Order Summary Table</h2>
+
+    <table border="1" cellspacing="0" id="values">
+        <tr>
+            <th>S.NO</th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+    </table>
+
+
+    <script>
+        let items = [
+            { name: "OnePlus Nord 4", quantity: 1, price: 36000 },
+            { name: "OnePlus TV", quantity: 3, price: 60000 },
+            { name: "IPhone 16pro", quantity: 2, price: 130000 },
+            { name: "Car", quantity: 1, price: 1500000 }];
+
+        values = document.getElementById("values")
+        for (let i = 0; i < items.length; i++) {
+            values.innerHTML += `<tr><td>${i + 1}</td><td>${items[i].name}</td> <td>${items[i].quantity}</td><td>${items[i].price}</td><td>${(items[i].price) * (items[i].quantity)}</td></tr>`;
+        }
+
+    </script>
+</body>
+
+</html>

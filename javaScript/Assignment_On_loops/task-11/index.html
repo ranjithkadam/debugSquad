@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart Simulation</title>
+</head>
+<body>
+    <h2>Add to Cart Simulation</h2>
+
+    <ul id="list">
+
+    </ul>
+     <script>
+        let list=document.getElementById("list");
+        for(let i=1;i<=5; i++){
+        let products=prompt(`Enter Item${i}: `);
+        list.innerHTML+=`
+            <li>${products}</li>
+            `;
+        }       
+    </script>
+</body>
+</html>

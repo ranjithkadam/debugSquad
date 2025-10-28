@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Product with Max Price</title>
+</head>
+<body>
+    <h2>Find Product with Max Price</h2>
+    
+    <script>
+         let prices = [{product:"Oneplus Phone", price:35000},
+         {product:"Iphone ", price:50000},
+         {product:"Samsung Phone", price:25000},
+         {product:"Vivo Phone", price:30000},
+                 ];
+            let max=0;
+        for(let i=0; i<prices.length; i++){
+            if(max<prices[i].price){
+                max=prices[i].price;
+            }
+        }
+        document.write(`Max Price is ${max}`)
+    </script>
+</body>
+</html>

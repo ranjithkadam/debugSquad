@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Stock-Based Product List</title>
+</head>
+<body>
+    <h2>Show Stock-Based Product List</h2>
+    
+    <script>
+       stocks= [
+                { name: "Keyboard", stock: 3 },
+                { name: "Mouse", stock: 0 },
+                { name: "Charger", stock: 2 },
+                { name: "KeyBoard", stock: 3},
+                { name: "CPU", stock:0 }
+            ];
+
+            let i=0;
+            while(i < stocks.length){
+                 if(stocks[i].stock != 0){
+                document.write(`${stocks[i].name} <br>`);
+            }
+                i++;
+            }
+
+    </script>
+</body>
+</html>

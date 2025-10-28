@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Cart Total</title>
+</head>
+<body>
+    <h2>Calculate Cart Total</h2>
+    
+    <script>
+        let cart = [499, 299, 1299, 999];
+        let i=0;
+        let sum=0;
+        while(i<cart.length){
+            sum+=cart[i];
+            i++;
+        }
+        document.write(`<h2>The Total Amount is: ${sum}</h2>`);
+    </script>
+</body>
+</html>

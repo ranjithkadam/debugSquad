@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show First 3 Products from Array</title>
+</head>
+<body>
+    <h2>Show First 3 Products from Array</h2>
+    <ul id="list">
+
+    </ul>
+    
+
+    <script>
+        let products=["Mouse","Keyboard","Monitor","laptop","Mobile"];
+        let list=document.getElementById("list");
+        for(let i=0; i<3; i++){
+            list.innerHTML+=`
+            <li>${products[i]}</li>
+            `;
+        }
+    </script>
+</body>
+</html>

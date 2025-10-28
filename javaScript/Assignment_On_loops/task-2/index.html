@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Discount Table</title>
+</head>
+<body>
+
+    <h2> Discount Table</h2>
+
+    <table border="1" cellspacing="0" id="values">
+        <tr><th>Original Price</th>
+            <th>Dscount Price(10%)</th></tr>    
+     </table>
+
+    <script>
+         let prices = [1000, 2000, 3000, 1500];
+            values=document.getElementById("values")
+         for(let i=0; i<prices.length;i++){
+            let dicount= prices[i]*(10/100);
+             values.innerHTML+=`<tr><td>${prices[i]}</td> <td>${prices[i]-dicount}</td></tr>`;     
+        }
+         
+    </script>
+</body>
+</html>

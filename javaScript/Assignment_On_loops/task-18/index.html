@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Cart Price and Budget</title>
+</head>
+<body>
+    <h2>Compare Cart Price and Budget</h2>
+    
+    <script>
+        let cartPrice=[250,100,99,300,350,450,650];
+        //let userBudget=parseInt(prompt('Enter Budget'));
+        let userBudget=5000;
+        let totalPrice=0;
+        for(let i=0; i<cartPrice.length; i++){
+            totalPrice+=cartPrice[i];
+        }
+        if(totalPrice<=userBudget){
+            document.write(`Within Budget.`)
+        }
+        else{
+            document.write(`Budget Exceeded..!!`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product Until Stock Zero</title>
+</head>
+<body>
+    <h2>Add Product Until Stock Zero</h2>
+    
+    <script>
+        let productStock=0;
+        let count=0;
+        for(let i=productStock; i>=0; i--){
+            if(productStock != 0){
+                count+=1;
+            }  
+            else{
+                document.write(`Product not yet added<br>`);
+            }
+        } 
+        document.write(`Product Added ${count} times<br>`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist Items</title>
+</head>
+<body>
+    <h2>Wishlist Items</h2>
+    <ol id="list"></ol>
+    
+    <script>
+        let products=["Mouse","Keyboard","Monitor","laptop","Mobile"];
+        let i=0;
+        let list=document.getElementById("list");
+
+       do{
+            list.innerHTML+=`
+            <li>${products[i]}</li> `;
+            i++;
+        }while(i<products.length);
+    </script>
+</body>
+</html>

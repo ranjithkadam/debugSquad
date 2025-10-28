@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List as Bullet Points</title>
+    <style>
+        div{
+            border: 1px solid black;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div id="unOrderedList"></div>
+
+    <script>
+        let products = ["Laptop", "Mobile", "Camera", "Shoes", "Earphones"];
+
+        unOrderedList=document.getElementById("unOrderedList");
+        for(i=0;i<products.length;i++){
+            unOrderedList.innerHTML+=`<ul><li>${products[i]}</li></ul>`
+        }
+    </script>
+
+</body>
+</html>
