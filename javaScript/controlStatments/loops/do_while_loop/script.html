@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do While loop</title>
+</head>
+<body>
+    <h3>do while loop</h3>
+    
+    <script>
+        /* do while : It is a iteratin loop used when the code code executes atleast once irrespective codetion.
+        Example:*/
+
+        document.write("WELCOME to XYZ BANK <br>");
+        
+        do{
+            userPin=parseInt(prompt("Enter Your PIN: "));
+        }while(userPin!=1234);
+
+        if(userPin==1234)
+        document.write("PIN Accepted How can i help..");
+
+        else
+            console.log("Invalied details..")
+    </script>
+</body>
+</html>

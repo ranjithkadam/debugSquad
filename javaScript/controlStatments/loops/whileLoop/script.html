@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while Loop</title>
+</head>
+<body>
+
+    <h2>While Loop</h2>
+    <script>
+        // While Loop: it ia a iteration loop. we use when we don't know extact the
+        // iterations of code.
+        //default condition for while is TRUE i.e., while(){....}
+        // in While loop we can initialize the value at outside of an block.
+        // Syntax: while(condtion){
+        //              code what we want to execute....
+        //         }
+
+        //Exmaple:
+        // let i=0;
+
+        // while(i<=10){
+        //     console.log("Iteration "+i);
+        //     document.write("<br>Iteration "+i);
+        //     i++;
+        // }
+
+        //Task : Login Access
+
+        let userPin=parseInt(prompt("Enter Four digit PIN: "));
+        let correctPin=1234;
+        count=0;
+
+        while(userPin!=correctPin){
+            //  document.write("Enter in is Not Correct Try Again..");
+            if(count<=3){
+             userPin=parseInt(prompt("Enter the Correct PIN you have only"+(3-count)+"Chances"));
+            count++;}
+             
+        }
+        document.write("Welcome to Bank");
+
+
+    </script>
+</body>
+</html>
