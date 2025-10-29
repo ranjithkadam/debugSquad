@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Cart Summary with Conditions</title>
+</head>
+<body>
+
+    <h2>Show Cart Summary with Conditions</h2>
+
+    <table border="1" cellspacing="0" id="values">
+        <tr><th>Item</th>
+            <th>Cart Value</th>
+            <th>Quantity</th>
+            <th>Delivery</th>
+        </tr>    
+     </table>
+
+    <script>
+         let prices = [{product:"Oneplus Phone", price:3000,quantity:2},
+         {product:"Iphone ", price:500, quantity:1},
+         {product:"Samsung Phone", price:250, quantity:1},
+         {product:"Vivo Phone", price:300, quantity:2},
+                 ];
+
+                 let delivery=""
+        values=document.getElementById("values")
+         for(let i=0; i<prices.length;i++){
+
+            let total=prices[i].price*prices[i].quantity
+
+            if(total> 5000){
+             delivery="Delivery Free"
+            }
+            else{
+            delivery="Not Delivery Free"
+            }
+         
+        values.innerHTML+=`
+        <tr><td>${prices[i].product}</td> 
+            <td>${total}</td>
+            <td>${prices[i].quantity}</td>
+            <td>${delivery}</td>
+            
+             
+             </tr>`;    
+        }
+         
+    </script>
+</body>
+</html>

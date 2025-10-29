@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Offer Based on category</title>
+</head>
+<body>
+    <h2>Dynamic Offer Based on category</h2>
+
+    <table id="values" cellspacing="0" border="1">
+        <tr>
+            <th>Category</th>
+            <th>Item Name</th>
+            <th>Final Price</th>
+            
+            
+        </tr>
+    </table>
+    
+    <script>
+        let categories = [
+        { name: "Electronics", items: ["iPhone", "OnePlus", "Samsung"],prices:[1000,900,800] },
+        { name: "Clothing", items: ["Mensware", "Ladiesware", "children"],prices:[1200,1900,800] }
+            ];
+        let values=document.getElementById("values")
+        for(let i=0; i<categories.length; i++){
+
+            for(let j=0;j<3;j++){
+
+            if(categories[i].name == "Electronics"){
+             Disc=(categories[i].prices[j])*(10/100);
+             }
+             else{
+                Disc=(categories[i].prices[j]*(5/100))
+                }
+            
+                values.innerHTML+=`
+                <td>${categories[i].name}</td>
+                <td>${categories[i].items[j]}</td>
+                <td>${categories[i].prices[j] - Disc}</td>
+                    `;  
+        } }
+    </script>
+</body>
+</html>

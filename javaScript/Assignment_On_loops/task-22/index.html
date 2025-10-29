@@ -18,9 +18,13 @@
         for(let i=0; i<prices.length; i++){
             if(max<prices[i].price){
                 max=prices[i].price;
+                if(max == prices[i].price)
+                name=prices[i].product;
             }
         }
-        document.write(`Max Price is ${max}`)
+        document.write(`Max Price is ${max}, The Product is ${name}`);
+        
+         
     </script>
 </body>
 </html>
