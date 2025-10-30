@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>pattern1</title>
+</head>
+<body>
+
+   <script>
+
+/*
+j j j
+1       i
+2 2     i
+3 3 3   i  */
+
+
+for(let i=1; i<=3;i++){
+    let str=" "
+    for(j=1; j<=i ;j++){
+       str+=i+' ';
+    }
+     document.write(str+"<br>");
+}
+ document.write("<hr >")
+
+// ==============================pattern-2==============================================
+
+/* 
+
+1
+1 2
+1 2 3
+
+*/
+
+for(i=1; i<=3;i++){
+   let str=" "
+   for(j=1 ;j<=i ;j++){
+      str+=j+' ';
+   }
+   document.write(str+"<br>");
+} 
+document.write("<hr >")
+
+// ==============================pattern-3==============================================
+/* 
+
+3
+3 2
+3 2 1
+
+*/
+
+for(i=3;i>=1;i--){
+   let str=""
+   for(j=3;j>=i;j--){
+      str+=j+" ";
+   }
+   document.write(str+"<br> ");
+}
+
+  document.write("<hr >")
+
+// ==============================pattern-4==============================================
+/* 
+
+3 3 3
+2 2
+1
+
+*/
+
+for(i=3;i>=1;i--){
+   let str="";
+   for(j=1;j<=i;j++){
+      str+=i+" ";
+   }
+   document.write(str+"<br>")
+}
+document.write("<hr >")
+
+
+// ==============================pattern-4==============================================
+/* 
+
+3 2 1
+2 1
+1
+
+*/
+
+for(i=3; i>=1 ;i--){
+   let str='';
+   for(j=i; j>=1; j--){
+      str+=j+" ";
+   }
+   document.write(str+"<br>");
+}
+
+document.write("<hr >")
+
+
+// ==============================pattern-5==============================================
+/* 
+
+ *
+ * * 
+ * * *
+
+*/
+
+for(i=1;i<=3;i++){
+let str='';
+   for(j=1;j<=i;j++){
+      str+="*"+" "
+   }
+   document.write(str+"<br>");
+}
+document.write("<hr >")
+
+
+// ==============================pattern-6==============================================
+
+/* 
+
+* * *
+* * 
+* 
+
+*/
+
+for(i=1;i<=3;i++){
+let str='';
+   for(j=i;j<=3;j++){
+      str+="*";
+   }
+   document.write(str+"<br>");
+}
+document.write("<hr >")
+
+// ==============================pattern-7==============================================
+
+/* 
+   j j j
+i  _ _ *
+i  _ * *
+i  * * *
+
+*/
+
+for(i=1;i<=3;i++){
+   let str='';
+   for(j=1;j<=i;j++){
+      str+="_ ";
+   }
+   document.write(str+' '+"<br>");
+}
+
+   </script>   
+</body>
+</html>
