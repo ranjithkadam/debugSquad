@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h2>Functions in JavaScript</h2>
+
+    <script>
+        //Fuction with No parameters & No return Type(Basic Functions)
+
+        function add(){
+            document.write(`Fuction with No parameters & No return Type<br>`);
+        };
+        add();
+//======================================================================================
+       
+    //Fuction with parameters & No return Type(Basic Functions)
+
+        function add(num1,num2,num3){
+            document.write(num1+num2+num3);
+        }
+       add(10,30,20);
+     
+//======================================================================================
+        
+    //Fuction with No parameters & with return Type(Basic Functions)
+
+        function add(){
+            return 10+20;
+        }
+      document.write(add());
+
+
+//======================================================================================
+        
+    //Fuction with parameters & with return Type(Basic Functions)
+
+     
+        function add(num1,num2){
+            return num1+num2;
+        }
+     let value=add(2,4);
+
+     document.write(value+"<br>");  //op: 6
+     document.write(add(3,5)); //op: 8
+
+//======================================================================================
+        
+    //Anonymous Function
+
+    value = function(){
+       document.write("hello World..<br>");    
+     }
+     let v=value();
+    document.write(v); //undefined
+
+
+//======================================================================================
+        
+// Function Expression/ Value Function
+
+ value = function(num1,num2){
+    return num1+num2;
+ }
+
+     document.write(value(4,3));
+
+
+
+    </script>
+</body>
+</html>
