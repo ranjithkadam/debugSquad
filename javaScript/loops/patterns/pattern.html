@@ -153,10 +153,13 @@ i  * * *
 
 for(i=1;i<=3;i++){
    let str='';
-   for(j=1;j<=i;j++){
-      str+="_ ";
+   for(j=3;j<=1;j++){
+      str+=" ";
    }
-   document.write(str+' '+"<br>");
+   for(k=1;k<=i;k++){
+   str+="*";
+   }
+   document.write(str+"<br>");
 }
 
    </script>   
