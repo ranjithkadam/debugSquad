@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>total bill</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <form action="#">
+        <h2>Hotel Masthan &#129346; &#127835;</h2>
+        <p id="greet"></p>
+
+        <table id="table" border="1" cellspacing="0">
+            <tr>
+                <th>Item Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total Price</th>
+                <th>Total(Including tax)</th>
+            </tr>
+
+        </table>
+        <button onclick="totalBill(3,100,0.2)" height="100px" width="200px">Click Here to Generate Bill</button> <br>
+    </form>
+
+    <script>
+        let greet="Ranjith"
+       // let greet = prompt("Enter Name: ");
+        document.getElementById("greet").innerText = `Welcome ${greet}`;
+
+        function totalBill(quantity, total, tax) {
+            let arr = [
+                { name: "Biriyani", price: 150 },
+                { name: "Mandi", price: 250 },
+                { name: "IceCream", price: 50 }
+            ];
+
+            let item = document.getElementById("table");
+            for (i = 0; i < arr.length; i++) {
+                 
+                let total = arr[i].price * quantity;
+                let totaltax = total * tax;
+
+                let totalPrice = quantity * arr[i].price;
+
+                item.innerHTML += `
+    <tr>
+        <td>${arr[i].name}</td>
+       <td>${arr[i].price}</td>
+        <td>${quantity}</td>
+        <td>${total}</td>
+        <td>${totalPrice + totaltax}</td>
+     </tr>`
+          }
+        }
+
+    </script>
+</body>
+
+</html>
