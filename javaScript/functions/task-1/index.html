@@ -11,7 +11,7 @@
 <body>
 
     <form action="#">
-        <h2>Hungry Buds&#129346; &#127835;</h2>
+        <h2>Hungry Birds&#129346; &#127835;</h2>
         <p id="greet"></p>
 
         <table id="table" border="1" cellspacing="0">
@@ -24,16 +24,20 @@
             </tr>
 
         </table>
-        <button onclick="totalBill(3,0.05)" height="100px" width="200px">Click Here to Generate Bill</button> <br>
+         <div class="btndiv">
+            <input type="radio" id="button" onclick="totalBill(3,0.05)">
+            <label for="button">Click Here to Generate Bill</label>
+        </div><br>
+
     </form>
 
     <script>
-        let greet="Ranjith"
-        includingTax=0;
-       //let greet = prompt("Enter Name: ");
+        let greet = "Ranjith"
+        includingTax = 0;
+        //let greet = prompt("Enter Name: ");
         document.getElementById("greet").innerText = `Welcome ${greet}`;
 
-        function totalBill(quantity,tax=0.02) {
+        function totalBill(quantity, tax = 0.02) {
             let arr = [
                 { name: "Biriyani", price: 150 },
                 { name: "Mandi", price: 250 },
@@ -42,10 +46,10 @@
 
             let item = document.getElementById("table");
             for (i = 0; i < arr.length; i++) {
-                 
+
                 let total = arr[i].price * quantity;
                 let totaltax = total * tax;
-                includingTax+=(totaltax+total);
+                includingTax += (totaltax + total);
 
                 item.innerHTML += `
     <tr>
@@ -55,15 +59,15 @@
         <td>${total}</td>
         <td>${total + totaltax}</td>
     </tr>`
-          }
+            }
 
-           item.innerHTML += `
+            item.innerHTML += `
     <tr>
         <td columnspan="1"></td>
        <td></td>
         <td></td>
-        <td>You have to Pay:</td>
-        <td> Rs.${includingTax}/-</td>
+        <td><h4>You have to Pay:</h4></td>
+        <td> <h4>Rs.${includingTax}/-</h4></td>
      </tr>`
         }
 

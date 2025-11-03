@@ -4,6 +4,7 @@ body{
 }
 form{
     background-color: rgb(236, 231, 231);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin:10% 20%;
     width: 50%;
     height: 50%;
@@ -21,9 +22,11 @@ form>h2{
     background-color: white;
     margin:5px;
     text-align: center;
+    border-radius: 5px;
+
 }
 
-form>h2, form{
+form>h2, form,h4{
     color: red;
     text-align: center;
 }
@@ -32,13 +35,29 @@ form>p{
     text-align: center;
 }
 
-button{
+[type="radio"]:checked~label, [type="radio"]{
+    display: none;
+}
+
+.btndiv{
+    display: flex;
+    justify-content: center;
+}
+label{
     background-color: rgb(58, 58, 224);
     color: white;
-    font-weight: 600;
-    height: 30px;
+    font-weight: 500;
     width: 250px;
-    margin-left: 30%;
-    border-style: none;
     border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
 }
+
+label:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+ 
+  
