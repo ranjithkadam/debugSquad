@@ -14,7 +14,7 @@
         function add(){
             document.write(`Fuction with No parameters & No return Type<br>`);
         };
-        add();
+        // add();
 //======================================================================================
        
     //Fuction with parameters & No return Type(Basic Functions)
@@ -22,7 +22,7 @@
         function add(num1,num2,num3){
             document.write(num1+num2+num3);
         }
-       add(10,30,20);
+    //    add(10,30,20);
      
 //======================================================================================
         
@@ -31,7 +31,7 @@
         function add(){
             return 10+20;
         }
-      document.write(add());
+    //   document.write(add());
 
 
 //======================================================================================
@@ -44,8 +44,8 @@
         }
      let value=add(2,4);
 
-     document.write(value+"<br>");  //op: 6
-     document.write(add(3,5)); //op: 8
+    //  document.write(value+"<br>");  //op: 6
+    //  document.write(add(3,5)); //op: 8
 
 //======================================================================================
         
@@ -55,7 +55,7 @@
        document.write("hello World..<br>");    
      }
      let v=value();
-    document.write(v); //undefined
+   // document.write(v); //undefined
 
 
 //======================================================================================
@@ -66,7 +66,33 @@
     return num1+num2;
  }
 
-     document.write(value(4,3));
+   //  document.write(value(4,3));
+
+//======================================================================================
+        
+// Function with Default parameter
+
+function greet(name="Guest"){
+    document.write(`Welcome ${name}<br>`);
+}
+
+greet("Ranjith");
+greet();
+
+//======================================================================================
+        
+// Same Function Names with Different parameters using default parameter Comcept.
+
+function multiply(num1=1,num2=1){
+    return num1*num2
+}
+
+function multiply(num1=1,num2=1,num3=1){
+    return num1*num2*num3+"<br>"
+}
+
+document.write(`Multiply of 2 Numbers: `+multiply(2,2));
+document.write(`Multiply of 3 Numbers: `+multiply(2,2,2));
 
 
 
