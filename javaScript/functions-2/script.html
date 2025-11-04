@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funtions2</title>
+</head>
+<body>
+    <script>
+
+
+// Fuction as parameter to Another Function.
+        function greet(paymentDone){
+            document.write(`Hello payment under Processing<br>`);
+            paymentDone();
+        }
+        function paymentDone(){
+            document.write("Payment Successfull.")
+        }
+      //  greet(paymentDone);
+//============================================================================================
+
+//Self Invoking Function 
+
+(function Hello(){
+    document.write("Hello am Self invoking function");
+});
+
+//============================================================================================
+
+//Recursive Function
+var fact=1;
+function factorial(num){
+    if(num<1)
+    return;
+ fact=num*fact;
+return factorial(num-1);
+}
+
+factorial(5)
+document.write(fact);
+
+//============================================================================================
+// callback Fuction
+
+function main(callback){
+    document.write("<br>Main Function");
+    callback();
+}
+
+main(inner);
+
+function inner(){
+    document.write("<br>Inner Fuction");
+}
+    </script>
+</body>
+</html>
