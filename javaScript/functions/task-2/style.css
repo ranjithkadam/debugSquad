@@ -1,0 +1,45 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color: whitesmoke;
+}
+
+label{
+    width:30%;
+    height: 15%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: larger;
+    border-radius: 5px;
+}
+
+[type="button"], [type="reset"]{
+    width: 120px;
+    height: 60px;
+    font-size: larger;
+    border-style: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+}
+
+[id="increment"]{
+    background-color: rgb(76, 76, 208);
+    font-weight: 600;
+}
+
+[id="decrement"]{
+    background-color: rgb(5, 140, 95);
+    font-weight: 600;
+    
+}
+
+[id="reset"]{
+    background-color: rgb(190, 205, 201);
+    font-weight: 600;
+}

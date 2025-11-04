@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment Decrement Reset Button</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+    <label for="increment" id="count">0</label><br>
+    <div>
+    <input type="button" id="increment" value="+" onclick="increment()">
+    <input type="button" id="decrement" value="-" onclick="decrement()">
+    <input type="reset" name="reset" id="reset" onclick="reset()"></div>
+
+    </div>
+
+   <script>
+    var count=0;
+    function increment(){
+        count+=1;
+        let increment=document.getElementById("count").innerText=`${count}`;
+    }
+
+    function decrement(){
+        count-=1;
+        let increment=document.getElementById("count").innerText=`${count}`;
+    }
+
+     function reset(){
+        count=0;
+        let increment=document.getElementById("count").innerText=`${count}`;
+    }
+
+   </script> 
+    
+</body>
+</html>
