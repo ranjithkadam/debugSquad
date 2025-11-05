@@ -82,10 +82,13 @@ cards.innerHTML+=`
                      <h4>${items[i].name}</h4>
                      <p>Rs.${items[i].price}</p>
                      <p>${items[i].stock}</p>
-                     <h4>Rating: ${items[i].rating}</h4>
-                </div>
+                     <h4>Rating: ${items[i].rating}</h4> 
         </div>
     `;
     }
 
- 
+setInterval(
+    function(){
+        let a=new Date();
+        document.getElementById("header2").innerText= a.toLocaleTimeString();
+    },1000);
