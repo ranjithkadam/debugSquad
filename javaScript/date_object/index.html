@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date object</title>
+</head>
+<body>
+    <p id="p"></p>
+    <script>
+        let d=new Date();
+
+         console.log(d.getDate());
+         console.log(d.getDay());
+         console.log(d.getFullYear());
+         console.log(d.getHours()-12);
+         console.log(d.getMilliseconds());
+         console.log(d.getMinutes());
+         console.log(d.getMonth()+1); // starts from 0 to 11 
+         console.log(d.getTime());
+         console.log(d.getTimezoneOffset());
+         console.log(d.toDateString());
+         console.log(d.toLocaleDateString());
+         console.log(d.toLocaleTimeString());
+    </script>
+</body>
+</html>
