@@ -13,19 +13,26 @@
     <i class="fa-solid fa-star" id="star4" onclick="rate(4)" style="color: rgb(104, 102, 102);"></i>
     <i class="fa-solid fa-star" id="star5" onclick="rate(5)" style="color: rgb(104, 102, 102);"></i>
     <p id="rating"></p>
-
+    <p id="time"></p>
+ 
 
     <script>
-        function rate(value){
-            for(let i=1;i<=5;i++){
+         function rate(value){
+             for(let i=1;i<=5;i++){
             document.getElementById("star"+i).style.color="rgb(104, 102, 102)";
             }
+
             for(let i=1; i<=value; i++){
-                document.getElementById("star"+i).style.color="red";
+               document.getElementById("star"+i).style.color="gold";
             }
+       
+ 
 
             document.getElementById("rating").innerText=`${value}/5`
+            document.getElementById("time").innerText=`
+            ${new Date().getFullYear()}/${new Date().getMonth()}/${new Date().getHours()}   ${new Date().getHours()}/${new Date().getMinutes()}/${new Date().getHours()}`;
         }
+        
     </script>
 </body>
 </html>
