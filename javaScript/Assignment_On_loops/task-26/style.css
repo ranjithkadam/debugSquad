@@ -123,7 +123,23 @@ nav>a:hover {
 }
 
 #header2{
-    width:100vw;
-    height: 120px;
+    width:38%;
+    margin: 1% 31%;
+     height: 100px;
+    display: flex;
+    background-color: rgb(250, 247, 202);
+    flex-direction: column;
+    align-items: center;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+#header2:hover{
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+
+#header2>h1{
+    color: rgb(244, 5, 60);
 }
 
