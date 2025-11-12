@@ -143,3 +143,21 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     color: rgb(244, 5, 60);
 }
 
+#addCart{
+    margin-top: 15%;
+    padding:5% 10%;
+    background-color: black;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+}
+
+#addCart:active{
+    background-color: rgb(216, 187, 23);
+    color: black;
+}
+
+#cartItems{
+    height: 20rem;
+    width: 100vw;
+}
