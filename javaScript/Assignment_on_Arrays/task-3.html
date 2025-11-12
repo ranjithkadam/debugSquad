@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+    <div id="msg" class="ml-3"></div>
+    <input type="button" name="" id="btn" value="ClickToRemove" onclick="remove()" class="bg-blue-600 px-3 py-1 rounded ml-2">
+
+    <script>
+        /*
+    Task 3: Remove the First Notification
+    Objective: Remove the first element from the list using shift()
+    Instructions:
+    1. Create an array named notifications = ["Welcome!", "New Offer!", "Your Order is
+    Shipped!"]
+    2. Display all notifications.
+    3. Add a button named “Remove Oldest”.
+    4. When clicked, remove the first notification using shift().
+    Expected Output:Click 1 → removes “Welcome!”Click 2 → removes “New Offer!”   
+        */
+
+        let notifications = ["Welcome!", "New Offer!", "Your Order is Shipped!"];
+        for (let i = 0; i < notifications.length; i++) {
+            document.getElementById("msg").innerText += (notifications[i] + "\n");
+        }
+
+        function remove() {
+            notifications.shift();
+            let msg=document.getElementById("msg")
+            for (let i = 0; i < notifications.length; i++) {
+                msg.innerText += ("\n" + notifications[i] );
+            }
+        }
+    </script>
+</body>
+
+</html>

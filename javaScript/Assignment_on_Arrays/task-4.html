@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="input" placeholder="Add Notification" class="bg-yellow-200 px-3 py-1 rounded ml-2 mb-5 mt-5">
+    <div id="msg" class="ml-3 bg-green-200 mb-3 w-100"></div>
+    <input type="button" name="" id="btn" value="ClickToAdd" onclick="add()" class="bg-blue-600 px-3 py-1 rounded ml-5">
+
+
+    <script>
+        /*
+        Task 4: Add New Notification at the Top
+        Objective: Add new notifications at the beginning using unshift()
+        Instructions:
+        1. Use the notifications array from Task 3.
+        2. Take input from the user for a new notification.
+        3. When clicked, add the new notification to the beginning using unshift().
+        4. Display the updated list.
+        Expected Output:After adding “Flash Sale Today!” →Flash Sale Today!, Welcome!, New
+        Offer!, Your Order is Shipped!
+        */
+
+        let notifications = ["Welcome!", "New Offer!", "Your Order is Shipped!"];
+        for (let i = 0; i < notifications.length; i++) {
+            document.getElementById("msg").innerText += (notifications[i] + "\n");
+        }
+
+        function add() {
+            notifications.unshift(document.getElementById("input").value);
+            let msg = document.getElementById("msg")
+            for (let i = 0; i < notifications.length; i++) {
+                msg.innerText += ("\n" + notifications[i]);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

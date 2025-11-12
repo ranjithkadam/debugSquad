@@ -8,22 +8,33 @@
 </head>
 
 <body>
-    
-    <script>
-        function cart() {
-            var cart = [];
-            for (let i = 1; i <=3; i++) {
-                let item=prompt("enter items into Cart: ");
-                let addCart=prompt("enter Yes to Add to Cart(yes/no): ");
-                 if(addCart == "yes"){
-                cart.push(item);
-                }   
-            }
-            document.write("Here is Products: " + cart);
 
-            let remove
+<script>
+    /*
+Task 2: Remove the Last Added Item
+Objective: Remove the last item using pop()
+Instructions:
+1. Use the same cart array from Task 1.
+2. Add a button named “Remove Last”.
+3. When clicked, remove the last product using pop().
+4. Update the displayed cart list.
+Expected Output:Before: Mouse, KeyboardAfter: Mouse
+        */
+
+function cart() {
+    var cart = [];
+    for (let i = 1; i <= 3; i++) {
+        let item = prompt("enter items into Cart: ");
+        let addCart = prompt("enter Yes to Add to Cart(yes/no): ");
+        if (addCart == "yes") {
+            cart.push(item);
+            }
         }
-        cart();
+        document.write("Here is Products: " + cart + "<br>");
+        cart.pop()
+        document.write("Result After Removing Last Product: " + cart);
+        }
+ cart();
 
     </script>
 </body>
