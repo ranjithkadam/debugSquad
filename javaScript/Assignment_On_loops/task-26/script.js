@@ -22,7 +22,7 @@ let items = [
     price: 100000,
     stock: "Unavailable",
     rating: 4.5,
-    id: 3
+    id:3
   },
 
   {
@@ -31,7 +31,7 @@ let items = [
     price: 60000,
     stock: "available",
     rating: 4.4,
-    id: 3
+    id:4
   },
 
   {
@@ -40,7 +40,7 @@ let items = [
     price: 20000,
     stock: "Unavailable",
     rating: 3.8,
-    id: 4
+    id:5
   },
 
   {
@@ -49,7 +49,7 @@ let items = [
     price: 18000,
     stock: "available",
     rating: 3.9,
-    id: 5
+    id:6
   },
 
   {
@@ -58,7 +58,7 @@ let items = [
     price: 35000,
     stock: "available",
     rating: 4.0,
-    id: 6
+    id:7
   },
 
   {
@@ -67,7 +67,7 @@ let items = [
     price: 60000,
     stock: "available",
     rating: 4.5,
-    id: 7
+    id:8
   },
 
   {
@@ -76,24 +76,12 @@ let items = [
     price: 48000,
     stock: "available",
     rating: 3.8,
-    id: 8
+    id:9
   }
 ];
 
-let addCartArr=[];
-function addToCart(id){
-for(let i=0;i<items.length; i++){
- if(items[i].id === id){
-  addCartArr.push(items[i].name,items[i].price,items[i].stock,items[i].rating+"\n");
- }
-}
-
-document.getElementById("cartItems").innerText=addCartArr;
-}
-addToCart(0);
-
-
 let cards = document.getElementById("cards")
+cards.innerHTML=""
 for (let i = 0; i < items.length; i++) {
   cards.innerHTML += `
            <div class="card">
@@ -104,22 +92,39 @@ for (let i = 0; i < items.length; i++) {
                      <h4>${items[i].name}</h4>
                      <p>Rs.${items[i].price}</p>
                      <p>${items[i].stock}</p>
-                     <h4>Rating: ${items[i].rating}</h4> 
-                     <button id="addCart" onclick="${addToCart(items[i].id)}">Add to Cart</button>
-        </div>
-    `;
+                    <div>
+                     <i class="fa-solid fa-star" id="s1" onclick="rate(1)"></i> 
+                     <i class="fa-solid fa-star" id="s2" onclick="rate(2)"></i> 
+                     <i class="fa-solid fa-star" id="s3" onclick="rate(3)"></i> 
+                     <i class="fa-solid fa-star" id="s4" onclick="rate(4)"></i> 
+                     <i class="fa-solid fa-star" id="s5" onclick="rate(5)"></i> 
+                     </div> 
+                     
+                     <button id="addCart" onclick="addToCart(${items[i].id})">Add to Cart</button>
+        </div> `;
 }
+// star rating...
 
+     function rate(value){
+             for(let i=1;i<=5;i++){
+            document.getElementById("s"+i).style.color="rgb(104, 102, 102)";
+            }
 
+            for(let i=1; i<=value; i++){
+               document.getElementById("s"+i).style.color="gold";
+            }
+               }
+               
+
+// =================
+
+//Timing banner
 function timer() {
   const offerStartTime = new Date();
   offerStartTime.setDate(offerStartTime.getDate() + 3);
-
   function updateTimer() {
-
     const now = new Date();
     const diff = offerStartTime - now;
-
     if (diff <= 0) {
       clearInterval(timer);
     }
@@ -128,27 +133,44 @@ function timer() {
     const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
     const minutes = Math.floor((diff / (1000 * 60)) % 60);
     const seconds = Math.floor((diff / 1000) % 60);
-
     document.getElementById("timer").innerText = `${days}d : ${hours}h : ${minutes}m : ${seconds}s`;
   }
   const timer = setInterval(updateTimer, 1000);
 }
 
 timer();
+//========================================================================
 
 // Add to Cart Function
+
+let addCartArr = [];
+function addToCart(id) {
+  for (let i = 0; i < items.length; i++) {
+    if (items[i].id == id) {
+      addCartArr.push(items[i].name);
+      addCartArr.push(items[i].price);
+    }
+  }
+console.log(addCartArr);
+   document.getElementById("table").innerHTML+=`<tr>
+  <td>${addCartArr[0]}</td>
+  <td>${addCartArr[1]}</td>
+   
+   </tr>`;
+
+  // document.getElementById("table").innerText+=addCartArr;
+
+  // let c=document.getElementById("table");
+  //  for(let i=0;i<=addCartArr.length;i++){
+  // c.innerHTML= `
+  // <tr>
+  // <td>${addCartArr[0]}</td>
+  // <td>${addCartArr[1]}</td>
+   
+  // </tr>
+  // `;
+
+  // }
+}
+
  
-// let addCartArr=[];
-// function addToCart(){
-
-// for(let i=0;i<items.length; i++){
-//  if(items[i].id == items.id){
-//   addCartArr.push(items[i]);
-//  }
-// }
-
-// document.getElementById("cartItems").innerText=addCartArr;
-// }
-
-
-// addToCart();

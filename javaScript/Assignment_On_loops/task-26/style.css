@@ -78,7 +78,7 @@ nav>a:hover {
 .card:hover{
      box-shadow: rgb(176, 176, 176) 0px 3px 10px 1px;
     transition: transform .3s ease;
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
 #cards{
@@ -160,4 +160,17 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 #cartItems{
     height: 20rem;
     width: 100vw;
+}
+
+i{
+    color: silver;
+}
+
+.addCarts{
+    text-align: center;
+}
+
+table{
+    margin:auto 20vw;
+    width: 50vw;
 }
