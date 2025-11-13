@@ -158,7 +158,7 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #cartItems{
-    height: 20rem;
+     padding-bottom: 3%;
     width: 100vw;
 }
 

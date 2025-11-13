@@ -22,7 +22,7 @@ let items = [
     price: 100000,
     stock: "Unavailable",
     rating: 4.5,
-    id:3
+    id: 3
   },
 
   {
@@ -31,7 +31,7 @@ let items = [
     price: 60000,
     stock: "available",
     rating: 4.4,
-    id:4
+    id: 4
   },
 
   {
@@ -40,7 +40,7 @@ let items = [
     price: 20000,
     stock: "Unavailable",
     rating: 3.8,
-    id:5
+    id: 5
   },
 
   {
@@ -49,7 +49,7 @@ let items = [
     price: 18000,
     stock: "available",
     rating: 3.9,
-    id:6
+    id: 6
   },
 
   {
@@ -58,7 +58,7 @@ let items = [
     price: 35000,
     stock: "available",
     rating: 4.0,
-    id:7
+    id: 7
   },
 
   {
@@ -67,7 +67,7 @@ let items = [
     price: 60000,
     stock: "available",
     rating: 4.5,
-    id:8
+    id: 8
   },
 
   {
@@ -76,12 +76,12 @@ let items = [
     price: 48000,
     stock: "available",
     rating: 3.8,
-    id:9
+    id: 9
   }
 ];
 
 let cards = document.getElementById("cards")
-cards.innerHTML=""
+cards.innerHTML = ""
 for (let i = 0; i < items.length; i++) {
   cards.innerHTML += `
            <div class="card">
@@ -93,28 +93,29 @@ for (let i = 0; i < items.length; i++) {
                      <p>Rs.${items[i].price}</p>
                      <p>${items[i].stock}</p>
                     <div>
-                     <i class="fa-solid fa-star" id="s1" onclick="rate(1)"></i> 
-                     <i class="fa-solid fa-star" id="s2" onclick="rate(2)"></i> 
-                     <i class="fa-solid fa-star" id="s3" onclick="rate(3)"></i> 
-                     <i class="fa-solid fa-star" id="s4" onclick="rate(4)"></i> 
-                     <i class="fa-solid fa-star" id="s5" onclick="rate(5)"></i> 
+                     <i class="fa-solid fa-star" id="s1-${i}" onclick="rate(${i},1)"></i> 
+                     <i class="fa-solid fa-star" id="s2-${i}" onclick="rate(${i},2)"></i> 
+                     <i class="fa-solid fa-star" id="s3-${i}" onclick="rate(${i},3)"></i> 
+                     <i class="fa-solid fa-star" id="s4-${i}" onclick="rate(${i},4)"></i> 
+                     <i class="fa-solid fa-star" id="s5-${i}" onclick="rate(${i},5)"></i> 
                      </div> 
                      
                      <button id="addCart" onclick="addToCart(${items[i].id})">Add to Cart</button>
         </div> `;
+
 }
 // star rating...
 
-     function rate(value){
-             for(let i=1;i<=5;i++){
-            document.getElementById("s"+i).style.color="rgb(104, 102, 102)";
-            }
+function rate(cardIndex, value) {
+  for (let i = 1; i <= 5; i++) {
+    document.getElementById(`s${i}-${cardIndex}`).style.color = "rgb(104, 102, 102)";
+  }
 
-            for(let i=1; i<=value; i++){
-               document.getElementById("s"+i).style.color="gold";
-            }
-               }
-               
+  for (let i = 1; i <= value; i++) {
+    document.getElementById(`s${i}-${cardIndex}`).style.color = "gold";
+  }
+}
+
 
 // =================
 
@@ -137,40 +138,29 @@ function timer() {
   }
   const timer = setInterval(updateTimer, 1000);
 }
-
 timer();
 //========================================================================
 
-// Add to Cart Function
-
+// Add toCart Function
 let addCartArr = [];
+total = 0;
 function addToCart(id) {
+if(!addCartArr.includes(items))
   for (let i = 0; i < items.length; i++) {
-    if (items[i].id == id) {
-      addCartArr.push(items[i].name);
-      addCartArr.push(items[i].price);
+
+    
+      if (items[i].id == id) {
+        let selectedItem = items[i];
+        addCartArr.push(selectedItem);
+        console.log(selectedItem);
+        document.getElementById("table").innerHTML += `
+        <tr>
+          <td>${selectedItem.name}</td>
+          <td>${selectedItem.price}</td>
+        </tr>`;
+        total += items[i].price;
+      }
+      document.getElementById("total").innerText = `Total : ${total} /-`;
     }
+    
   }
-console.log(addCartArr);
-   document.getElementById("table").innerHTML+=`<tr>
-  <td>${addCartArr[0]}</td>
-  <td>${addCartArr[1]}</td>
-   
-   </tr>`;
-
-  // document.getElementById("table").innerText+=addCartArr;
-
-  // let c=document.getElementById("table");
-  //  for(let i=0;i<=addCartArr.length;i++){
-  // c.innerHTML= `
-  // <tr>
-  // <td>${addCartArr[0]}</td>
-  // <td>${addCartArr[1]}</td>
-   
-  // </tr>
-  // `;
-
-  // }
-}
-
- 
