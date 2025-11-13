@@ -86,12 +86,14 @@ for (let i = 0; i < items.length; i++) {
   cards.innerHTML += `
            <div class="card">
                 <div class="img-div">
-                    <img src="${items[i].img}"> 
+                    <img src="${items[i].img}" alt="pic"> 
                 </div>
+
                 <div class="img-content">
                      <h4>${items[i].name}</h4>
                      <p>Rs.${items[i].price}</p>
                      <p>${items[i].stock}</p>
+                
                     <div>
                      <i class="fa-solid fa-star" id="s1-${i}" onclick="rate(${i},1)"></i> 
                      <i class="fa-solid fa-star" id="s2-${i}" onclick="rate(${i},2)"></i> 
@@ -101,7 +103,7 @@ for (let i = 0; i < items.length; i++) {
                      </div> 
                      
                      <button id="addCart" onclick="addToCart(${items[i].id})">Add to Cart</button>
-        </div> `;
+                </div> </div>` ;
 
 }
 // star rating...
@@ -145,22 +147,23 @@ timer();
 let addCartArr = [];
 total = 0;
 function addToCart(id) {
-if(!addCartArr.includes(items))
-  for (let i = 0; i < items.length; i++) {
+  for (let i = 0; i < items.length; i++) {  
 
-    
-      if (items[i].id == id) {
+    if (items[i].id == id) {
+      
         let selectedItem = items[i];
         addCartArr.push(selectedItem);
-        console.log(selectedItem);
+        // console.log(selectedItem);
         document.getElementById("table").innerHTML += `
         <tr>
           <td>${selectedItem.name}</td>
           <td>${selectedItem.price}</td>
         </tr>`;
         total += items[i].price;
-      }
-      document.getElementById("total").innerText = `Total : ${total} /-`;
     }
-    
+      document.getElementById("total").innerText = `Total : ${total} /-`;
+    }  
   }
+     
+   
+
