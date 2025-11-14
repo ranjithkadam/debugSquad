@@ -106,11 +106,11 @@ for (let i = 0; i < items.length; i++) {
                 </div> </div>` ;
 
 }
-// star rating...
+// ================= Star Rating function ================
 
 function rate(cardIndex, value) {
   for (let i = 1; i <= 5; i++) {
-    document.getElementById(`s${i}-${cardIndex}`).style.color = "rgb(104, 102, 102)";
+    document.getElementById(`s${i}-${cardIndex}`).style.color = "rgba(185, 180, 180, 1)";
   }
 
   for (let i = 1; i <= value; i++) {
@@ -118,10 +118,8 @@ function rate(cardIndex, value) {
   }
 }
 
+// =================Timing banner Function ===============
 
-// =================
-
-//Timing banner
 function timer() {
   const offerStartTime = new Date();
   offerStartTime.setDate(offerStartTime.getDate() + 3);
@@ -141,29 +139,38 @@ function timer() {
   const timer = setInterval(updateTimer, 1000);
 }
 timer();
-//========================================================================
 
-// Add toCart Function
-let addCartArr = [];
-total = 0;
+//============== Add toCart Function ====================
+var addCartArr = [];
+var total = 0;
+var quantity = 0;
 function addToCart(id) {
-  for (let i = 0; i < items.length; i++) {  
 
-    if (items[i].id == id) {
-      
-        let selectedItem = items[i];
+  for (let i = 0; i < items.length; i++) {
+    if (items[i].id === id) {
+      selectedItem = items[i];
+      if (!(addCartArr.includes(selectedItem))) {
         addCartArr.push(selectedItem);
-        // console.log(selectedItem);
-        document.getElementById("table").innerHTML += `
+        console.log(selectedItem);
+        total += items[i].price;
+
+        displayAddedCarts();
+      }
+      else {
+        alert("This Product Already Added !");
+      }
+    }
+    document.getElementById("total").innerText = `Total : ${total} /-`;
+  }
+}
+
+//================ Dispaly cart items:==================
+
+function displayAddedCarts() {
+  c = document.getElementById("table");
+  c.innerHTML += `
         <tr>
           <td>${selectedItem.name}</td>
           <td>${selectedItem.price}</td>
         </tr>`;
-        total += items[i].price;
-    }
-      document.getElementById("total").innerText = `Total : ${total} /-`;
-    }  
-  }
-     
-   
-
+}
