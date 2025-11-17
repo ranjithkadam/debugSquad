@@ -5,7 +5,6 @@ function registraion() {
   localStorage.setItem("name", JSON.stringify(username));
   localStorage.setItem("password", JSON.stringify(password));
   alert("Registered Successfully");
-
 }
 
 function login() {
