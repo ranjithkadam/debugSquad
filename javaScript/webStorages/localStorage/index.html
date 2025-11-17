@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    
+    <script>
+        let input1=prompt("Enter user name: ");
+        let input2=parseInt(prompt("Enter Password: "));
+       let details={"name":"ranjith", 
+                    "password":54321
+                    }
+
+        localStorage.setItem("details",JSON.stringify(details));
+        console.log( JSON.parse(localStorage.getItem("details")));
+ 
+if(input1 === details.name && input2 === details.password){
+    alert("Login Succeses");
+}
+else{
+    alert("LogIn Fail..");
+}
+    </script>
+</body>
+</html>
