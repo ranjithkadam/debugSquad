@@ -1,16 +1,24 @@
 function registraion() {
   let username = document.getElementById("name").value;
   let password = document.getElementById("password").value;
+  let email = document.getElementById("email").value;
 
-  localStorage.setItem("name", JSON.stringify(username));
-  localStorage.setItem("password", JSON.stringify(password));
-  alert("Registered Successfully");
+  if(!username || !password){
+   alert("Fill the Fields..");
+   return;
+  }
+   
+    localStorage.setItem("name", username.trim());
+    localStorage.setItem("email", email.trim());
+    localStorage.setItem("password", password.trim());
+    alert("Registered Successfully");
 }
 
 function login() {
   let username = document.getElementById("name").value;
+  // let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
-  if (username === (JSON.parse(localStorage.getItem("name"))) && password === (JSON.parse(localStorage.getItem("password")))) {
+  if (username === localStorage.getItem("name") && password === localStorage.getItem("password")) {
     alert("LogIn Successfully..");
   }
 
@@ -18,3 +26,5 @@ function login() {
     alert("Invalid username or Password !");
   }
 };
+
+ 
