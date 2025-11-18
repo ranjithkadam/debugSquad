@@ -1,4 +1,4 @@
-function shoppingCarts(){
+// function shoppingCarts(){
 
 let items = [
   {
@@ -176,27 +176,27 @@ function displayAddedCarts() {
           <td>${selectedItem.price}</td>
         </tr>`;
 }
-}
+// }
 // ================Login Details==========
 
-function registraion() {
-  let username = document.getElementById("name").value;
-  let password = document.getElementById("password").value;
+// function registraion() {
+//   let username = document.getElementById("name").value;
+//   let password = document.getElementById("password").value;
 
-  localStorage.setItem("name", JSON.stringify(username));
-  localStorage.setItem("password", JSON.stringify(password));
-  alert("Registered Successfully");
-}
+//   localStorage.setItem("name", JSON.stringify(username));
+//   localStorage.setItem("password", JSON.stringify(password));
+//   alert("Registered Successfully");
+// }
 
-function login() {
-  let username = document.getElementById("name").value;
-  let password = document.getElementById("password").value;
-  if (username === (JSON.parse(localStorage.getItem("name"))) && password === (JSON.parse(localStorage.getItem("password")))) {
-    alert("LogIn Successfully..");
-    shoppingCarts();
-  }
+// function login() {
+//   let username = document.getElementById("name").value;
+//   let password = document.getElementById("password").value;
+//   if (username === (JSON.parse(localStorage.getItem("name"))) && password === (JSON.parse(localStorage.getItem("password")))) {
+//     alert("LogIn Successfully..");
+//     shoppingCarts();
+//   }
 
-  else {
-    alert("Invalid username or Password !");
-  }
-};
+//   else {
+//     alert("Invalid username or Password !");
+//   }
+// };

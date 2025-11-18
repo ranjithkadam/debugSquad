@@ -20,6 +20,7 @@ function login() {
   let password = document.getElementById("password").value;
   if (username === localStorage.getItem("name") && password === localStorage.getItem("password")) {
     alert("LogIn Successfully..");
+    
   }
 
   else {
