@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+
+     <!-- Header section -->
+    <header class="bg-black h-20 flex justify-between items-center ">
+        <div class="image w-[10%] ml-1 ">
+            <img src="./assets/logo rk.jpg" alt="logo" class="h-20">
+        </div>
+        <nav class="navbar w-[70%]">
+            <input type="text" name="search" placeholder="Search here" class="border bg-white w-100 h-10 px-2 rounded">
+           
+            <button disabled class="disabled-cursor-not-allowed"><a href="#" class="button bg-white text-black px-4 py-2 rounded ml-35 mr-4">HOME</a></button>
+           <button disabled><a href="#" class="button bg-white text-black px-4 py-2 rounded mx-4" disabled>CART</a></button> 
+           <button ><a href="./login.html" class="button bg-white text-black px-4 py-2 rounded mx-4">LogOut</a></button> 
+            
+        </nav>
+    </header>
+
+    <div class="flex justify-center align-center h-100 mt-5 ">
+        <form action="#" method="post" class="bg-red-100 rounded-xl ">
+            <h2 class="font-bold text-2xl text-center mb-10 mt-17">Register</h2>
+            <input type="text" id="name" placeholder="Enter User Name" class="bg-white mx-10 pl-3"><br><br>
+            <input type="password" id="password" placeholder="Enter password" class="bg-white mx-10 pl-3"><br><br>
+            <input type="email" id="email" placeholder="Enter email" class="bg-white mx-10 pl-3"><br><br>
+
+            <input type="button" id="" onclick="registraion()" value="Register"
+                class="bg-black text-white px-3 py-1 rounded mx-22"><br>
+                <a href="./login.html" class="text-xs text-center text-blue-900 mx-20">Click Here to Login</a>
+        </form>
+    </div>
+    <script src="./app.js"> </script>
+</body>
+
+</html>
