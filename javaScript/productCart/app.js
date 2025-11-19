@@ -21,8 +21,8 @@ function login() {
 
   if (username === localStorage.getItem("name") && password === localStorage.getItem("password")) {
     alert("LogIn Successfully.."); 
-    window.location.href = "./index.html";
-    // document.getElementById("greet").submit();
+    // window.location.href = "./index.html";
+    document.getElementById("greet").submit();
   }
 
   else {
