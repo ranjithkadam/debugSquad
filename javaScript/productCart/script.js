@@ -158,6 +158,7 @@ function addToCart(id) {
           total += items[i].price;
 
           displayAddedCarts();
+         
         }
         else {
           alert("This Product Already Added !");
@@ -184,31 +185,37 @@ function displayAddedCarts() {
         </tr>`;
 }
 function greet() {
-  let date = new Date();
-  let tempTime = date.toLocaleTimeString().slice(0, 1);
-  let time = tempTime;
-  let session=date.toLocaleTimeString().slice(8,10);
+ let date= new Date();
+let tempTime = date.toLocaleTimeString().slice(0,1);
+let tempTime2 = date.toLocaleTimeString().slice(0,2);
+
+let time= tempTime;
+let time2=tempTime2;
+
+let session=date.toLocaleTimeString().slice(9,11);
+let session2=date.toLocaleTimeString().slice(8,10);
+
+  let morning = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"];
+  let afternoon = ["12", "1", "2", "3", "4"];
+  let evening = ["5", "6", "7", "8", "10", "11"];
 
 
-  let day = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,12];
-   
-
-  if (day.includes(time) && session=="am") {
+  if ((morning.includes(time) && session == "am") || (morning.includes(time2) && session2 == "am")) {
     console.log("Morning");
-    let name=localStorage.getItem("name").toUpperCase();
+    let name = localStorage.getItem("name").toUpperCase();
     document.getElementById("helloGreet").innerText = `Good Morning ${name} !`;
   }
 
-  else if (day.includes(time) && session=="pm") {
+  else if ((afternoon.includes(time) && session == "pm") || (afternoon.includes(time2) && session2 == "pm")) {
     console.log("Afternoon");
-    let name=localStorage.getItem("name").toUpperCase()
+    let name = localStorage.getItem("name").toUpperCase()
     document.getElementById("helloGreet").innerText = `Good Afternoon ${name} !`;
   }
 
-  else {
+  else if ((evening.includes(time) && session == "pm") || (evening.includes(time2) && session2 == "pm")) {
     console.log("evening");
-    let name=localStorage.getItem("name").toUpperCase();
+    let name = localStorage.getItem("name").toUpperCase();
     document.getElementById("helloGreet").innerText = `Good Evening ${name} !`;
   }
 }
-greet();
+greet();  
