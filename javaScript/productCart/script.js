@@ -184,36 +184,30 @@ function displayAddedCarts() {
           <td>${selectedItem.price}</td>
         </tr>`;
 }
+
+// ===========Greeting Funtion==========
 function greet() {
  let date= new Date();
-let tempTime = date.toLocaleTimeString().slice(0,1);
-let tempTime2 = date.toLocaleTimeString().slice(0,2);
+ let session=date.getHours();
+  let morning = [0,1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+  let afternoon = [12, 13, 14, 15, 16];
+  // let evening = [17, 18, 19, 20, 21, 22,23];
+  
+  let name = localStorage.getItem("name").toUpperCase();
 
-let time= tempTime;
-let time2=tempTime2;
-
-let session=date.toLocaleTimeString().slice(8,11);
-
-  let morning = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"];
-  let afternoon = ["12", "1", "2", "3", "4"];
-  let evening = ["5", "6", "7", "8", "10", "11"];
-
-
-  if ((morning.includes(time) && session.trim() == "am") /* || (morning.includes(time2) && session2 == "am")*/) {
+  if (morning.includes(session)) {
     console.log("Morning");
-    let name = localStorage.getItem("name").toUpperCase();
     document.getElementById("helloGreet").innerText = `Good Morning ${name} !`;
   }
 
-  else if ((afternoon.includes(time) && session.trim() == "pm") /*|| (afternoon.includes(time2) && session2 == "pm")*/) {
+  else if (afternoon.includes(session)) {
     console.log("Afternoon");
-    let name = localStorage.getItem("name").toUpperCase()
     document.getElementById("helloGreet").innerText = `Good Afternoon ${name} !`;
   }
 
-  else if ((evening.includes(time) && session.trim() == "pm") /*|| (evening.includes(time2) && session2 == "pm")*/) {
+  else{
+  // else if (evening.includes(session)) {
     console.log("evening");
-    let name = localStorage.getItem("name").toUpperCase();
     document.getElementById("helloGreet").innerText = `Good Evening ${name} !`;
   }
 }
