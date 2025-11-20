@@ -192,27 +192,26 @@ let tempTime2 = date.toLocaleTimeString().slice(0,2);
 let time= tempTime;
 let time2=tempTime2;
 
-let session=date.toLocaleTimeString().slice(9,11);
-let session2=date.toLocaleTimeString().slice(8,10);
+let session=date.toLocaleTimeString().slice(8,11);
 
   let morning = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"];
   let afternoon = ["12", "1", "2", "3", "4"];
   let evening = ["5", "6", "7", "8", "10", "11"];
 
 
-  if ((morning.includes(time) && session == "am") || (morning.includes(time2) && session2 == "am")) {
+  if ((morning.includes(time) && session.trim() == "am") /* || (morning.includes(time2) && session2 == "am")*/) {
     console.log("Morning");
     let name = localStorage.getItem("name").toUpperCase();
     document.getElementById("helloGreet").innerText = `Good Morning ${name} !`;
   }
 
-  else if ((afternoon.includes(time) && session == "pm") || (afternoon.includes(time2) && session2 == "pm")) {
+  else if ((afternoon.includes(time) && session.trim() == "pm") /*|| (afternoon.includes(time2) && session2 == "pm")*/) {
     console.log("Afternoon");
     let name = localStorage.getItem("name").toUpperCase()
     document.getElementById("helloGreet").innerText = `Good Afternoon ${name} !`;
   }
 
-  else if ((evening.includes(time) && session == "pm") || (evening.includes(time2) && session2 == "pm")) {
+  else if ((evening.includes(time) && session.trim() == "pm") /*|| (evening.includes(time2) && session2 == "pm")*/) {
     console.log("evening");
     let name = localStorage.getItem("name").toUpperCase();
     document.getElementById("helloGreet").innerText = `Good Evening ${name} !`;
