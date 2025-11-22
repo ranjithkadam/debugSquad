@@ -1,5 +1,4 @@
-let users=[];
-function registraion() {
+ function register() {
   let username = document.getElementById("name").value;
   let password = document.getElementById("password").value;
   let email = document.getElementById("email").value;
@@ -46,4 +45,5 @@ else {
   // }
 };
 
+ 
  
