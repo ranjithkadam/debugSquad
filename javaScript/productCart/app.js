@@ -1,3 +1,4 @@
+let users=[];
 function registraion() {
   let username = document.getElementById("name").value;
   let password = document.getElementById("password").value;
