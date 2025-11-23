@@ -86,7 +86,7 @@ let cards = document.getElementById("cards")
 cards.innerHTML = ""
 for (let i = 0; i < items.length; i++) {
   cards.innerHTML += `
-           <div class="card bg-white w-[30%] h-60 shadow rounded flex items-center hover:w-[31%] transition-all">
+           <div class="card bg-white w-[30%] h-60 shadow rounded flex items-center hover:scale-105  transition-all">
                 <div class="img-div w-[60%]">
                     <img src="${items[i].img}" alt="pic" class="w-[100%] h-[100%]"> 
                 </div>
