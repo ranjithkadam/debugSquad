@@ -179,10 +179,20 @@ function addToCart(id) {
 function displayAddedCarts() {
   c = document.getElementById("table");
   c.innerHTML += `
-        <tr class="border mx-100 w-100 text-center">
+        <tr class="border mx-100 w-100 text-center uniqueCart" id="uniqueCart">
           <td>${selectedItem.name}</td>
           <td>${selectedItem.price}</td>
+          <td><button onclick="removeProduct(${selectedItem.id})" class="border px-1 my-1 bg-yellow-500 text-black rounded hover:cursor-pointer"> remove </button></td>
+
         </tr>`;
+}
+
+//==========Delete Item From Cart Function===========
+
+function removeProduct(id){
+// let item=  document.getElementsByClassName("uniqueCart");
+
+console.log(addCartArr)
 }
 
 // ===========Greeting Funtion==========
