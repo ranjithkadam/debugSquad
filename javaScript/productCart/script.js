@@ -195,6 +195,28 @@ function removeProduct(id){
 console.log(addCartArr)
 }
 
+//======= Courosole=========
+ function courosole() {
+      let c_imgs = [
+        { img: "https://static.vecteezy.com/system/resources/thumbnails/001/925/528/small_2x/black-friday-sale-banner-or-promotion-on-dark-background-online-shopping-store-with-mobile-credit-cards-and-shop-elements-illustration-vector.jpg" },
+        { img: "https://img.freepik.com/free-psd/new-smartphone-social-media-cover-design-template_47987-25433.jpg?semt=ais_hybrid&w=740&q=80" },
+        { img: "https://img.freepik.com/premium-psd/banner-black-friday-portuguese-3d-render-marketing-campaign-brazil_363450-5709.jpg?semt=ais_hybrid&w=740&q=80" }]
+      let count = 0;
+      let courosole = document.getElementById("courosole");
+
+      let c = -1;
+      setInterval(function inc() {
+        c += 1;
+        if (c <= 2) {
+          courosole.innerHTML = `<img src="${c_imgs[c].img}" class="h-[100%] w-[100%] transition-all">`;
+        }
+        else {
+          c = -1;
+        }
+      }, 2000);
+    }
+    courosole();
+
 // ===========Greeting Funtion==========
 function greet() {
  let date= new Date();

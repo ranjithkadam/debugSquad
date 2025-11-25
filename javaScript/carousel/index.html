@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+</head>
+
+<body>
+  <header>
+    <div id="courosole" class="h-[200px] w-318"> </div>
+  </header>
+  <div class="flex justify-between "></div>
+
+  <script>
+
+    function courosole() {
+      let c_imgs = [
+        { img: "https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg" },
+        { img: "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg" },
+        { img: "https://images.pexels.com/photos/462162/pexels-photo-462162.jpeg" }]
+      let count = 0;
+      let courosole = document.getElementById("courosole");
+
+      let c = -1;
+      setInterval(function inc() {
+        c += 1;
+        if (c <= 2) {
+          courosole.innerHTML = `<img src="${c_imgs[c].img}" class="h-[100%] w-[100%] transition-all">`;
+        }
+        else {
+          c = -1;
+        }
+      }, 2000);
+    }
+    courosole();
+  </script>
+</body>
+
+</html>

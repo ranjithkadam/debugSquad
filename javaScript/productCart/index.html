@@ -13,7 +13,7 @@
 
 </head>
 
-<body class="font-Arial bg-stone-100 " id="body" >
+<body class="font-Arial bg-stone-100 " id="body">
 
     <!-- Header section -->
     <header class="bg-black h-20 flex justify-between items-center " id="header">
@@ -22,26 +22,32 @@
         </div>
         <nav class="navbar w-[70%]">
             <input type="text" name="search" placeholder="Search here" class="border bg-white w-100 h-10 px-2 rounded">
-           
+
             <a href="./index.html" class="button bg-white text-black px-4 py-2 rounded ml-35 mr-4">HOME</a>
             <button onclick="theme()" class="button bg-white text-black px-4 py-2 rounded mx-4">Theme</button>
             <a href="./login.html" class="button bg-white text-black px-4 py-2 rounded mx-4">LogOut</a>
-            
+
         </nav>
     </header>
-    <h2 id="helloGreet" class="text-center text-[15px] border rounded-4xl my-1 mx-130 text-orange-400 py-2"> <p>&#128075; </p></h2>
-    
+    <h2 id="helloGreet" class="text-center text-[15px] border rounded-4xl my-1 mx-130 text-orange-400 py-2">
+        <p>&#128075; </p>
+    </h2>
+    <!-- Courosole -->
+    <header>
+        <div id="courosole" class="h-[300px] w-318"> </div>
+    </header>
+
     <!-- navBar section -->
-    <nav id="header2" class="text-center bg-yellow-300 shadow mb-5 py-3 rounded">
-        <h1 class="font-bold text-4xl text-red-500 ">Flash Sale </h1>    
+    <nav id="header2" class="text-center bg-yellow-100 shadow mb-5 py-3 rounded">
+        <h1 class="font-bold text-4xl text-red-500 ">Flash Sale </h1>
         <p>Limited offer... Hurry Up !</p>
         <h3 id="timer" class="text-orange-400 border font-bold text-2xl py-1 rounded mx-125"></h3>
     </nav>
-     
+
 
     <section id="cards" class="flex justify-evenly items-center flex-wrap gap-5 mb-3"> </section>
     <hr>
-    <h2 class="addCarts font-bold text-xl text-center" >Items In Cart</h2>
+    <h2 class="addCarts font-bold text-xl text-center">Items In Cart</h2>
 
     <section id="cartItems" class="mb-2">
         <table id="table" border="1" cellspacing="0" class="border mx-100 w-100">
@@ -65,7 +71,7 @@
         </div>
         <li>Deevloping is still in Progress</li>
 
-    </footer >
+    </footer>
 
     <script src="./script.js">
 
