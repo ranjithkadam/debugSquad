@@ -13,18 +13,18 @@
 
 </head>
 
-<body class=" font-Arial bg-stone-100">
+<body class="font-Arial bg-stone-100 " id="body" >
 
     <!-- Header section -->
-    <header class="bg-black h-20 flex justify-between items-center ">
+    <header class="bg-black h-20 flex justify-between items-center " id="header">
         <div class="image w-[10%] ml-1 ">
             <img src="./assets/logo rk.jpg" alt="logo" class="h-20">
         </div>
         <nav class="navbar w-[70%]">
             <input type="text" name="search" placeholder="Search here" class="border bg-white w-100 h-10 px-2 rounded">
            
-            <a href="#" class="button bg-white text-black px-4 py-2 rounded ml-35 mr-4">HOME</a>
-            <a href="./cart.html" class="button bg-white text-black px-4 py-2 rounded mx-4">CART</a>
+            <a href="./index.html" class="button bg-white text-black px-4 py-2 rounded ml-35 mr-4">HOME</a>
+            <button onclick="theme()" class="button bg-white text-black px-4 py-2 rounded mx-4">Theme</button>
             <a href="./login.html" class="button bg-white text-black px-4 py-2 rounded mx-4">LogOut</a>
             
         </nav>
@@ -32,10 +32,10 @@
     <h2 id="helloGreet" class="text-center text-[15px] border rounded-4xl my-1 mx-130 text-orange-400 py-2"> <p>&#128075; </p></h2>
     
     <!-- navBar section -->
-    <nav id="header2" class="text-center bg-yellow-300 shadow mb-5  rounded">
+    <nav id="header2" class="text-center bg-yellow-300 shadow mb-5 py-3 rounded">
         <h1 class="font-bold text-4xl text-red-500 ">Flash Sale </h1>    
         <p>Limited offer... Hurry Up !</p>
-        <h3 id="timer" class="text-white bg-black font-bold text-2xl py-1 rounded mx-125"></h3>
+        <h3 id="timer" class="text-orange-400 border font-bold text-2xl py-1 rounded mx-125"></h3>
     </nav>
      
 

@@ -69,8 +69,8 @@ title.classList.toggle("image");
 let body = document.getElementById("body");
 function theme(){
 // body.classList.toggle(body.style.background="white");
-body.classList.toggle(body.style.background="black");
-body.classList.toggle(body.style.color="white");
+body.classList.toggle("bg-white");
+body.classList.toggle("bg-black");
 
 // body.classList.toggle(body.style.background="white");
 

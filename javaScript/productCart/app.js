@@ -20,6 +20,10 @@ function login() {
   let username = document.getElementById("name").value;
  //let email = document.getElementById("email").value;
   let password = document.getElementById("password").value;
+   if(!username || !password){
+   alert("Fill the Fields..");
+   return;
+  }
   if(count<3){
    count++;
   if (username === localStorage.getItem("name") && password === localStorage.getItem("password")) {
