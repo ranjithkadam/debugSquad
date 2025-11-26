@@ -23,17 +23,18 @@
         { img: "https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg" },
         { img: "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg" },
         { img: "https://images.pexels.com/photos/462162/pexels-photo-462162.jpeg" }]
-      let count = 0;
+      // let count = 0;
       let courosole = document.getElementById("courosole");
 
-      let c = -1;
+      let c = 0;
       setInterval(function inc() {
-        c += 1;
+        
         if (c <= 2) {
           courosole.innerHTML = `<img src="${c_imgs[c].img}" class="h-[100%] w-[100%] transition-all">`;
+          c += 1;
         }
         else {
-          c = -1;
+          c = 0;
         }
       }, 2000);
     }

@@ -203,14 +203,15 @@ function courosole() {
     { img: "https://img.freepik.com/premium-psd/banner-black-friday-portuguese-3d-render-marketing-campaign-brazil_363450-5709.jpg?semt=ais_hybrid&w=740&q=80" }]
   let courosole = document.getElementById("courosole");
 
-  let count = -1;
+  let count = 0;
   setInterval(function inc() {
-    count += 1;
+    
     if (count <= 2) {
       courosole.innerHTML = `<img src="${c_imgs[count].img}" class="h-[100%] w-[100%]">`;
+      count += 1;
     }
     else {
-      count = -1;
+      count = 0;
     }
   }, 2000);
 }
