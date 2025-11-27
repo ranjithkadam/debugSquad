@@ -97,3 +97,27 @@ btn.onkeyup=function(){
 //     alert("addEventLister clicked 2");
 // })
 
+btn.addEventListener("click",function(){
+    document.getElementById("btn").style.backgroundColor="red";
+})
+
+btn.addEventListener("mouseout",function(){
+    document.getElementById("btn").style.backgroundColor="";
+})
+
+btn.addEventListener("mouseover",function(){
+    document.getElementById("btn").style.backgroundColor="green";
+    document.getElementById("btn").style.padding="5px";
+})
+
+text=document.getElementById("text");
+text.addEventListener("focus",function(){
+     text.style.backgroundColor="green";
+})
+
+text.addEventListener("blur",function(){
+    text.style.backgroundColor="";
+})
+text.addEventListener("keydown",function(event){
+    alert("key presses: "+event.key)
+})
