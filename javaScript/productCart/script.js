@@ -156,12 +156,15 @@ function addToCart(id) {
           addCartArr.push(selectedItem);
           console.log(selectedItem);
           total += items[i].price;
-
           displayAddedCarts();
 
         }
-        else {
+        else if(addCartArr.includes(selectedItem)) {
           alert("This Product Already Added !");
+          addCartArr.push(selectedItem);
+          console.log(selectedItem);
+          total += items[i].price;
+          displayAddedCarts();
         }
       }
       else {
@@ -175,24 +178,31 @@ function addToCart(id) {
 }
 
 //================ Dispaly cart items:==================
-
+let count=1;
 function displayAddedCarts() {
   c = document.getElementById("table");
+  c.onload=function(){
+    alert("please wait");
+  }
+ 
   c.innerHTML += `
-        <tr class="border mx-100 w-100 text-center uniqueCart" id="uniqueCart">
+        <tr class="border mx-100 w-100 text-center uniqueCart" id="uniqueCart-${count}">
+          <td>${count}</td>
           <td>${selectedItem.name}</td>
           <td>${selectedItem.price}</td>
-          <td><button onclick="removeProduct(${selectedItem.id})" class="border px-1 my-1 bg-yellow-500 text-black rounded hover:cursor-pointer"> remove </button></td>
+          <td><button onclick="removeProduct(${count}, ${selectedItem.price})" class="border px-1 my-1 bg-yellow-500 text-black rounded hover:cursor-pointer"> remove </button></td>
 
         </tr>`;
+        count++;
 }
 
 //==========Delete Item From Cart Function===========
 
-function removeProduct(id) {
-  // let item=  document.getElementsByClassName("uniqueCart");
+function removeProduct(count, price) {
 
-  console.log(addCartArr)
+   document.getElementById(`uniqueCart-${count}`).style.display="none";
+   total-=price;
+   document.getElementById("total").innerText = `Total : ${total} /-`;
 }
 
 //======= Courosole===========
