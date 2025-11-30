@@ -1,108 +1,171 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font (Optional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
 </head>
 
-<body>
 
-    <section class="personal-porfolio">
-        <section class="portfolioBody">
-            <div class="ProfilePhoto">
-                <img src="./images/Me.jpg" alt="myPic" height="200px" width="200px">
-            </div>
-            <div class="body">
-                <!-- Introduction -->
-                <div class="intro">
-                    <h1>Kadam Ranjith Kumar</h1>
-                    <p> &nbsp; Aspiring Software Engineer, B.Tech Graduate in CSE (AI&ML) Branch and Recent B.Tech
-                        graduate
-                        with a strong foundation in programming, problem-solving, and software development.</p>
-                    <button><a href="./Updated Resume Sept.pdf" target="_blank" download="document">Download My Resume</a></button>
-                </div>
-        </section>
+<body class="bg-gray-100 text-gray-800">
 
-        <section class="skills-Set">
-            <div class="Professional skills">
-                <h2>Professional Skills</h2>
-                <p> PYTHON | JAVA | HTML | CSS | JavaScript | C Language | SQL | DATA STRUCTURES </p>
+    <!-- Main Container -->
+    <section class="max-w-5xl mx-auto p-6">
+
+        <!-- Profile Section -->
+        <section class="bg-white shadow-lg rounded-xl p-6 mb-10 flex flex-col md:flex-row items-center gap-6">
+            <div>
+                <img src="./images/Me.jpg" alt="myPic"
+                    class="rounded-full h-40 object-cover border shadow-md">
             </div>
 
-            <div class="Personal skills">
-                <h2>Personal Skills</h2>
-                <p>
-                    Team Leader and Team Player | Communication Skills | Communication Skills | Flexible and
-                    Hardworking | Self Confidence | Sincere towards to work</p>
+            <div>
+                <h1 class="text-3xl font-bold text-blue-600">Kadam Ranjith Kumar</h1>
+                <p class="mt-3 text-gray-600 leading-relaxed">
+                    Aspiring Software Engineer, B.Tech Graduate in CSE (AI & ML). Strong foundation in programming,
+                    problem-solving, and software development.
+                </p>
+
+                <a href="./Ranjith_Resume_Nov2.pdf" target="_blank" download="document">
+                    <button
+                        class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition">
+                        Download My Resume
+                    </button>
+                </a>
             </div>
         </section>
 
-        <section class="Projects">
-            <div class="Project One">
-                <img src="https://www.shutterstock.com/shutterstock/photos/1199480788/display_1500/stock-vector-creation-responsive-internet-website-for-multiple-platforms-building-mobile-interface-on-screen-1199480788.jpg" alt="projectImg" height="50%" width="100%" style="border-radius: 10px;"> 
-                <h2>Project1 Name</h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo aliquam ab voluptatem
-                    reiciendis atque, dolor deserunt repudiandae et incidunt?</p>
-            </div>
+        <!-- Skills Section -->
+        <section class="grid md:grid-cols-2 gap-6 mb-10 ">
 
-            <div class="Project Two">
-                <img src="https://www.shutterstock.com/shutterstock/photos/1423639097/display_1500/stock-vector-isometric-concept-young-people-are-engaged-in-web-design-website-page-development-template-1423639097.jpg" alt="projectImg" height="50%" width="100%" style="border-radius: 10px;"> 
-                <h2>Project2 Name</h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis commodi nobis nostrum ipsum
-                    minus, dolorem enim vel mollitia nemo quod!
+            <div class="bg-white shadow-lg rounded-xl p-6">
+                <h2 class="text-xl font-semibold text-blue-600 mb-3">Professional Skills</h2>
+                <p class="text-gray-700">
+                    HTML | CSS | JavaScript | C Language | MS SQL Server | Python | Java
                 </p>
             </div>
 
-            <div class="Project Three">
-                <img src="https://www.shutterstock.com/shutterstock/photos/151614224/display_1500/stock-photo-businessman-hand-touch-screen-with-technology-business-concept-creative-network-information-151614224.jpg" alt="projectImg" height="50%" width="100%" style="border-radius: 10px;"> 
-                <h2>Project3 Name</h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nemo aliquam ab voluptatem
-                    reiciendis atque, dolor deserunt repudiandae et incidunt?</p>
+            <div class="bg-white shadow-lg rounded-xl p-6">
+                <h2 class="text-xl font-semibold text-blue-600 mb-3">Personal Skills</h2>
+                <p class="text-gray-700">
+                    Team Leader | Communication Skills | Flexible | Hardworking | Self-Confident | Sincere Towards Work
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Projects Section -->
+        <section>
+            <h2 class="text-2xl font-bold text-blue-600 mb-5">Projects</h2>
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-1 gap-6">
+
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl shadow-lg p-4">
+                    <img src="https://cdn.prod.website-files.com/67b7abfbb037e687d0a415ec/67db95411df971225cd735e7_emerging_technologies_in_finance.webp"
+                        class="rounded-md mb-3 h-40 w-full object-cover" alt="project">
+                    <h2 class="text-lg font-semibold">Future of Loan Approvals with Explainable AI</h2>
+                    <p class="text-gray-600 mt-2">This project is a front-end web design prototype built using HTML5 and CSS3, focused on delivering a 
+responsive, visually appealing, and user-friendly interface. The design emphasizes clean layout structures, 
+consistent typography, and modern styling techniques such as flexbox and grid for adaptive responsiveness 
+across devices.</p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl shadow-lg p-4">
+                    <img src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg"
+                        class="rounded-md mb-3 h-40 w-full object-cover" alt="project">
+                    <h2 class="text-lg font-semibold">Future Gadget Expo 2025</h2>
+                    <p class="text-gray-600 mt-2">Developed an automated loan approval system leveraging Explainable AI (XAI) to enhance transparency 
+and fairness in credit scoring.</p>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl shadow-lg p-4">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/151614224/display_1500/stock-photo-businessman-hand-touch-screen-with-technology-business-concept-creative-network-information-151614224.jpg"
+                        class="rounded-md mb-3 h-40 w-full object-cover" alt="project">
+                    <h2 class="text-lg font-semibold">Project 3 Name</h2>
+                    <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
             </div>
         </section>
 
-        <section class="contact-feedback">
-            <div class="contact-details">
-                <h2>Contact Me</h2><br>
 
-                <div class="details">
-                    <h3>Mobile No:</h3>
-                    <p>+91 8374873003</p>
+        <!-- Contact & Feedback -->
+        <section class="grid md:grid-cols-2 gap-8 mt-12">
+
+            <!-- Contact -->
+            <div class="bg-white shadow-lg rounded-xl p-6">
+                <h2 class="text-2xl font-semibold text-blue-600 mb-4">Contact Me</h2>
+
+                <div class="mb-3">
+                    <h3 class="font-medium">Mobile:</h3>
+                    <p class="text-gray-700">+91 8374873003</p>
                 </div>
 
-                <div class="details">
-                    <h3>Email Id:</h3><a href="https:www.ranjithkumar.kadam@gmail.com"
-                        target="_blank">ranjithkumar.kadam@gmail.com</a>
+                <div class="mb-3">
+                    <h3 class="font-medium">Email:</h3>
+                    <a href="mailto:ranjithkumar@gmail.com" class="text-blue-600 hover:underline">
+                        ranjithkumar@gmail.com
+                    </a>
                 </div>
 
-                <div class="details">
-                    <h3>GitHub Id:</h3><a href="https://github.com/ranjithkadam" target="_blank">ranjithkadam</a>
+                <div class="mb-3">
+                    <h3 class="font-medium">GitHub:</h3>
+                    <a href="https://github.com/ranjithkadam" target="_blank" class="text-blue-600 hover:underline">
+                        github.com/ranjithkadam
+                    </a>
                 </div>
 
-                <div class="details">
-                    <h3>LinkedIn:</h3><a href="https://www.linkedin.com/in/kadam-ranjith-kumar"
-                        target="_blank">ranjithkadam</a>
+                <div class="mb-3">
+                    <h3 class="font-medium">LinkedIn:</h3>
+                    <a href="https://www.linkedin.com/in/kadam-ranjith-kumar" target="_blank"
+                        class="text-blue-600 hover:underline">
+                        linkedin.com/in/kadam-ranjith-kumar
+                    </a>
                 </div>
 
             </div>
 
-            <div class="feedback">
+            <!-- Feedback -->
+            <div class="bg-white shadow-lg rounded-xl p-6">
+                <h2 class="text-2xl font-semibold text-blue-600 mb-4">Send Feedback</h2>
+
                 <form action="#">
-                    <h2>Send feedback</h2><br>
+                    <input type="text" name="name" placeholder="Enter your name" required
+                        class="w-full p-3 mb-4 border border-gray-300 rounded-lg">
 
-                    <input type="text" name="name" placeholder="Enter yours name" required><br><br>
-                    <input type="email" name="email" placeholder="Enter your email" required><br> <br>
-                    <input type="address" placeholder="Please share your feedback !">
-                    <div class="Send"><br><br>
-                        <input type="button" value="Send Message">
-                    </div>
+                    <input type="email" name="email" placeholder="Enter your email" required
+                        class="w-full p-3 mb-4 border border-gray-300 rounded-lg">
 
+                    <textarea placeholder="Please share your feedback"
+                        class="w-full p-3 h-28 border border-gray-300 rounded-lg"></textarea>
+
+                    <button type="submit"
+                        class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700 transition">
+                        Send Message
+                    </button>
                 </form>
+            </div>
+
         </section>
+
     </section>
+
 </body>
 
 </html>
