@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
+
 <body>
-    <!-- <form action="/javaScript/productCart/index.html" id="form"> -->
-        <input type="text" placeholder="Enter username" id="username" autocomplete="off" >
-        <!-- <input type="password" placeholder="enter password" id="password" autocomplete="off">
-        <input type="submit" value="submit" id="submit-btn" onclick="submit()"> -->
+    <form action="#" id="form" class="flex gap-10 m-10">
+        <input type="text" class="border p-2 rounded" placeholder="Enter username" id="username" autocomplete="off">
+        <input type="password" class="border p-2 rounded" placeholder="enter password" id="password" autocomplete="off">
+        <input type="submit" class="border p-2 rounded bg-red-500 active:bg-green-500" value="submit" id="submit-btn" onclick="submit()">
         <span id="worning-msg">0/100 </span>
-    <!-- </form> -->
+    </form>
 
     <script src="./script.js"></script>
 </body>
+
 </html>

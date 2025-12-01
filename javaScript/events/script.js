@@ -119,5 +119,6 @@ text.addEventListener("blur",function(){
     text.style.backgroundColor="";
 })
 text.addEventListener("keydown",function(event){
+    event.preventDefault();
     alert("key presses: "+event.key)
 })
