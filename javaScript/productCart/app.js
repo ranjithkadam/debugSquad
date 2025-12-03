@@ -63,7 +63,7 @@ if(emailPattern.test(email)){
   document.getElementById("para").style.color="green"
   }
   else{
-  document.getElementById("para").innerText=`Invalid data`;
+  document.getElementById("para").innerText=`Invalid data Please try again`;
   document.getElementById("para").style.color="red"
   }
 }
@@ -107,4 +107,21 @@ function login() {
   // }
 };
 
+//input styling
+document.getElementById("name").addEventListener("focus", function(){
+      document.getElementById("name").style.outlineColor="green";
+    });
+
+document.getElementById("password").addEventListener("focus", function(){
+      document.getElementById("password").style.outlineColor="green";
+    });  
+    
+document.getElementById("email").addEventListener("focus", function(){
+      document.getElementById("email").style.outlineColor="green";
+    }); 
+    
+document.getElementById("tel").addEventListener("focus", function(){
+      document.getElementById("tel").style.outlineColor="green";
+    });
+    
 
