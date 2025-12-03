@@ -187,7 +187,7 @@ function displayAddedCarts() {
  
   c.innerHTML += `
         <tr class="border mx-100 w-100 text-center uniqueCart" id="uniqueCart-${count}">
-          <td>${count}</td>
+          
           <td>${selectedItem.name}</td>
           <td>${selectedItem.price}</td>
           <td><button onclick="removeProduct(${count}, ${selectedItem.price})" class="border px-1 my-1 bg-yellow-500 text-black rounded hover:cursor-pointer"> remove </button></td>

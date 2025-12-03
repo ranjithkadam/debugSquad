@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+   <form action="#" class="m-10 " >
+    <div>
+        <input id="username" type="text" placeholder="enter username" class="w-100 border py-3 placeholder:p-2">
+        <p id="para"></p>
+    </div>
+   </form> 
+
+   <script>
+    let username=document.getElementById("username")
+    username.addEventListener("focus",function(){
+        username.style.outlineColor="green";
+        let userpattern=/[^a-bA-Z]+{2,}/;
+        if(userpattern.test(username.value)){
+            document.getElementById("para").innerText="Accepted"
+        }
+            
+    });
+
+    username.addEventListener("blur",function(){
+        username.style.outlineColor="";
+    });
+ 
+   </script>
+</body>
+</html>
