@@ -35,4 +35,8 @@ let digits= /%d/;
 // 8. {n}-> strickly size, {n,} atleast one from infinite, {n,m}-> starts from n to m
 
 let s1=/{}/;
-console.log(s1.test("abc"));
+// console.log(s1.test("abc"));
+
+username=/^[a-z]+[0-9]*_*$/;
+
+console.log(username.test("abcssdsd123"));
