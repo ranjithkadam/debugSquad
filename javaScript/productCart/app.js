@@ -81,14 +81,18 @@ function login() {
   if (count < 3) {
     count++;
     if (username === localStorage.getItem("name") && password === localStorage.getItem("password")) {
-      alert("LogIn Successfully..");
+      //alert("LogIn Successfully..");
       // window.location.href = "./index.html";
+      document.getElementById("para-2").innerText=`Login Successfully !`;
+      document.getElementById("para-2").style.color="green";
       document.getElementById("greet").submit();
 
     }
 
     else {
-      alert("Invalid username or Password !");
+      // alert("Invalid username or Password !");
+      document.getElementById("para-2").innerText=`Invalid username or Password !`;
+      document.getElementById("para-2").style.color="red";
     }
 
   }
