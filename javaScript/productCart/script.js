@@ -154,6 +154,7 @@ function addToCart(id) {
         selectedItem = items[i];
         if (!(addCartArr.includes(selectedItem))) {
           addCartArr.push(selectedItem);
+          alert(selectedItem.name+" is added to cart !");
           console.log(selectedItem);
           total += items[i].price;
           displayAddedCarts();
