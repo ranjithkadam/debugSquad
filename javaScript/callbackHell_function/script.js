@@ -1,16 +1,23 @@
 function orderPlaced(orderPacked){
-    console.log("Order placed");
+    setTimeout(()=>{
+        console.log("Order placed");
     orderPacked();
+    },2000);
+    
 }
 
 function orderPacked(delivered){
-    console.log("Orderpacked");
+   setTimeout(() => {
+     console.log("Orderpacked");
     delivered();
+   }, 1500);
 }
 
 function delivered(timeout){
-    console.log("delivered");
+    setTimeout(() => {
+        console.log("delivered");
     timeout();
+    }, 1000);
      
 }
 
