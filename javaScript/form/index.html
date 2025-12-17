@@ -10,25 +10,40 @@
 <body>
    <form action="#" class="m-10 " >
     <div>
-        <input id="username" type="text" placeholder="enter username" class="w-100 border py-3 placeholder:p-2">
+        <input id="username" type="text" placeholder="enter username" class="w-100 border rounded py-3 placeholder:p-2">
+         <input id="password" type="password" placeholder="enter username" class="w-100 border rounded py-3 placeholder:p-2">
         <p id="para"></p>
+
+        <button class="border my-2 px-3 rounded bg-stone-200" id="sumbit-btn">sumbit</button>
     </div>
    </form> 
 
    <script>
-    let username=document.getElementById("username")
-    username.addEventListener("focus",function(){
-        username.style.outlineColor="green";
-        let userpattern=/[^a-bA-Z]+{2,}/;
-        if(userpattern.test(username.value)){
-            document.getElementById("para").innerText="Accepted"
-        }
-            
-    });
+  
+    document.getElementById("sumbit-btn").addEventListener("click",function(){
+        let username= document.getElementById("username").value;
+            let password= document.getElementById("password").value;
+        if(!username || !password){
+        // alert("Fill the form");
+        
+        let popUp= document.getElementById("para");
+        popUp.innerText=`Please Fill the Form`;
+        popUp.style.color="red";
+        popUp.style.background="green";
+        popUp.style.width="200px";
+        popUp.style.height="500px";
+        popUp.style.textAlign="center";
+        popUp.style.
 
-    username.addEventListener("blur",function(){
-        username.style.outlineColor="";
+         return;
+        }
+
+        let para=document.getElementById("para");
+        para.innerText=`Hello ${username}, form is submitted..!!`;
+        para.style.color="green";
+        
     });
+     
  
    </script>
 </body>
