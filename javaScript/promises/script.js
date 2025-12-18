@@ -22,7 +22,7 @@
 // })
 
 let order= new Promise((success, fail)=>{
-    let orderPlaced= false;
+    let orderPlaced= true;
 
     if(orderPlaced){
         success("Order placed Successfull."); 
