@@ -25,7 +25,7 @@ return new Promise((resolve, reject)=>{
 function getMarks(subject){
     return new Promise((resolve, reject)=>{
         setTimeout(()=>{
-        console.log("get Marks function and id is: "+ subject);
+        console.log("getMarks function and subject is: "+ subject);
         resolve(7);
     }, 2000)
     });
