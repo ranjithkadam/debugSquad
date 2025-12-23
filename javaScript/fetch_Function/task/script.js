@@ -1,6 +1,6 @@
 function showcarts(){
 
- const input=document.getElementById("input").value;
+const input=document.getElementById("input").value;
 fetch("https://dummyjson.com/products/search?q="+input)
 .then( contant => contant.json())
 .then(data => displayCarts(data.products) /*console.log(data)*/)
@@ -21,6 +21,5 @@ function displayCarts(data){
     `;
  })
 }
-
  }
 showcarts();
