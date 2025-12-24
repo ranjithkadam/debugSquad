@@ -7,11 +7,18 @@ fetch("https://dummyjson.com/todos")
 function todos(data){
      
     data.forEach( item =>{
+        let status="";
+        if(item.completed){
+            status="Yes";
+        }
+        else{
+            status="No";
+        }
         document.getElementById("container").innerHTML+=`
             <tr>
             <td>${item.id}</td>
-            <td>${item.todo}</td>
-            <td>${item.completed}</td>
+            <td>${item.todo}</td>  
+            <td>${status}</td>
         </tr>
         `;
     })
